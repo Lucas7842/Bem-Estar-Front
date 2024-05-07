@@ -324,3 +324,70 @@ body, html {
 .search-section #resultsTable th {
   background-color: #f2f2f2;
 }
+/*Aqui começa o css da página de nutrição*/
+/* Breadcrumbs  */
+/* Define o estilo da seção de migalhas de pão */
+.breadcrumbs {
+  padding: 15px 0; /* Adiciona preenchimento acima e abaixo da seção */
+  background: whitesmoke; /* Define o fundo da seção */
+  min-height: 40px; /* Define a altura mínima da seção */
+  margin-top: 74px; /* Adiciona uma margem superior */
+}
+
+/* Define o estilo do título da seção de migalhas de pão */
+.breadcrumbs h2 {
+  font-size: 28px; /* Define o tamanho da fonte */
+  font-weight: 400; /* Define a espessura da fonte */
+  margin: 0; /* Remove a margem padrão */
+}
+
+/* Define o estilo da lista ordenada de migalhas de pão */
+.breadcrumbs ol {
+  display: flex; /* Exibe os itens da lista em linha */
+  flex-wrap: wrap; /* Permite que os itens da lista quebrem para a próxima linha se necessário */
+  list-style: none; /* Remove os marcadores de lista */
+  padding: 0; /* Remove o preenchimento interno */
+  margin: 0; /* Remove a margem padrão */
+}
+
+/* Define o estilo para os itens da lista de migalhas de pão, exceto o primeiro */
+.breadcrumbs ol li+li {
+  padding-left: 10px; /* Adiciona espaço à esquerda entre os itens */
+}
+
+/* Define o estilo para o separador entre os itens da lista de migalhas de pão */
+.breadcrumbs ol li+li::before {
+  display: inline-block; /* Exibe o separador como um bloco inline */
+  padding-right: 10px; /* Adiciona espaço à direita do separador */
+  color: #2f2f2f; /* Define a cor do separador */
+  content: "/"; /* Define o conteúdo do separador */
+}
+
+/* Define o estilo para telas menores que 992px */
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 68px; /* Redefine a margem superior para telas menores */
+  }
+
+  .breadcrumbs .d-flex {
+    display: block !important; /* Exibe o container de forma de bloco */
+  }
+
+  .breadcrumbs ol {
+    display: block; /* Exibe os itens da lista em bloco */
+    padding: 5px 0; /* Adiciona um pequeno preenchimento vertical */
+  }
+
+  .breadcrumbs ol li {
+    display: inline-block; /* Exibe os itens da lista em linha */
+    padding: 5px 10px; /* Adiciona um pequeno preenchimento */
+  }
+
+  .breadcrumbs ol li+li {
+    padding-left: 0; /* Remove o preenchimento à esquerda entre os itens */
+  }
+
+  .breadcrumbs ol li+li::before {
+    display: none; /* Oculta o separador "/" em telas menores */
+  }
+}
