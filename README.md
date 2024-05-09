@@ -1,5 +1,5 @@
 # Projeto Saúde e Bem-Estar
-# Academias, Nutrição e Saúde Mental.
+# Academias, Nutrição e Saúde.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
