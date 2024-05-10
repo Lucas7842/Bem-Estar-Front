@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import"../Academias/styles.css";
-import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import "../Academias/styles.css";
+
 const NavItem = ({ link, text }) => (
   <li>
     <a className="nav-link scrollto" href={link}>{text}</a>
   </li>
 );
 
-// Componente para a barra de navegação
 const NavBar = () => (
   <nav id="navbar" className="navbar order-last order-lg-0">
     <ul>
@@ -23,7 +22,6 @@ const NavBar = () => (
   </nav>
 );
 
-// Componente para o cabeçalho
 const Header = () => (
   <header id="header" className="fixed-top header-inner-pages">
     <div className="container d-flex align-items-center justify-content-lg-between">
@@ -55,4 +53,15 @@ const Breadcrumbs = () => {
   );
 };
 
-export{NavItem,NavBar,Header, Breadcrumbs}
+// Função principal que envolve todos os componentes relacionados a personal
+const Personal = () => (
+  <>
+  <NavBar/>
+  <NavItem/>
+    <Header />
+    <Breadcrumbs />
+
+  </>
+);
+
+export default Personal;

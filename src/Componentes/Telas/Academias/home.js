@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import"../Academias/styles.css";
-import Corrida from "../../img/corrida.jpg";
 import { FaBiking } from "react-icons/fa";
-import { Link } from 'react-router-dom';
+import Corrida from "../../img/corrida.jpg";
+
 
 // Componente do cabeçalho
 function HeaderComponent() {
@@ -211,5 +211,16 @@ function Footer() {
 };
 
 
-export { HeaderComponent, HeroSection, AboutSection, ServicesSection, Footer, FeaturesSection };
+const  Home = ()=> (
+<>
+<HeaderComponent/>
+<HeroSection/>
+<AboutSection/>
+<FeaturesSection/>
+<ServicesSection/>
+<Footer/>
+</>
+);
+
+export default Home
 

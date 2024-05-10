@@ -200,6 +200,12 @@ class SearchSection extends React.Component {
     );
   }
 }
-
-
-export{HeaderComponent, Breadcrumbs, Team, SearchSection};
+const  Academia = ()=> (
+  <>
+<HeaderComponent/>
+<Breadcrumbs/>
+<Team/>
+<SearchSection/>
+  </>
+  );
+export default Academia;

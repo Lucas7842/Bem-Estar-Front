@@ -1,20 +1,15 @@
 
-import { NavItem } from 'react-bootstrap';
 import './App.css';
-//import { Team } from './Componentes/Telas/Academias/academia';
-//import ConsultaUsuario from './Componentes/ConsultaUsuario'; 
-//import  { HeaderComponent, Footer, HeroSection, AboutSection, ServicesSection, FeaturesSection } from './Componentes/Telas/Academias';
-//import { HeaderComponent, Breadcrumbs, Team, SearchSection } from './Componentes/Telas/Academias/academia';
-//import {Header,NavBar,NavItem, Breadcrumbs,Teams, ContactForm,Footer} from "./Componentes/Telas/Academias/nutricao";
-import {Header,Breadcrumbs, NavBar} from "./Componentes/Telas/Academias/personal";
-
+import ConsultaUsuario from './Componentes/ConsultaUsuario'; 
+import Personal from "./Componentes/Telas/Academias/personal"
+import Home from"./Componentes/Telas/Academias/home"
+import Academia from "./Componentes/Telas/Academias/academia"
+import Nutricao from './Componentes/Telas/Academias/nutricao'
 function App() {
   return (
     <div className="App">
-      <NavItem/>
-      <NavBar/>
-    <Header/>
-    <Breadcrumbs/>
+   <ConsultaUsuario/>
+   
     </div>
   );
 }

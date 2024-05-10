@@ -5,7 +5,7 @@ import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import Nutri from "../../img/team/nutrionista1.png";
 import Nutric from"../../img/team/nutricionista2.png";
 import Nutrica from "../../img/team/nutricionista3.png";
-import Nutricao from "../../img/team/nutricionista4.png";
+import Nutricaoo from "../../img/team/nutricionista4.png";
 // Header da nutrição
 // Componente para cada item de navegação
 const NavItem = ({ link, text }) => (
@@ -130,7 +130,7 @@ function Teams() {
           <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div className="member" data-aos="fade-up" data-aos-delay="400">
               <div className="member-img">
-                <img src={Nutricao} className="img-fluid" alt="" />
+                <img src={Nutricaoo} className="img-fluid" alt="" />
                 <div className="social">
                   <a href=""><i className="bi bi-twitter"></i></a>
                   <a href=""><i className="bi bi-facebook"></i></a>
@@ -248,6 +248,16 @@ function Footer() {
   );
 
 };
+const  Nutricao = ()=> (
+  <>
+<Header/>
+<NavBar/>
+<NavItem/>
+<Breadcrumbs/>
+<Teams/>
+<ContactForm/>
+<Footer/>
+  </>
+  );
 
-
-export {Header, NavBar, NavItem, Breadcrumbs,Teams, ContactForm, Footer};
+export default Nutricao;
