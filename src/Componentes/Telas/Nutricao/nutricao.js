@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import"../Academias/styles.css";
+import"../Nutricao/nutricao.css";
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
 import Nutri from "../../img/team/nutrionista1.png";
 import Nutric from"../../img/team/nutricionista2.png";

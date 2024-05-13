@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../Academias/styles.css";
+import "../Personal/personal.css";
 
 const NavItem = ({ link, text }) => (
   <li>
