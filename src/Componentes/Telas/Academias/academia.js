@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import"../Academias/styles.css";
+import { Link } from 'react-router-dom';
 import Villa from"../../img/team/villa.PNG";
 import Pano from "../../img/team/panobianco.PNG";
 import Smart from "../../img/team/smartfit.jpg";
@@ -15,16 +16,16 @@ function HeaderComponent() {
         <h1 className="logo me-auto me-lg-0"><a href="index.html">PD<span>.</span></a></h1>
         <nav id="navbar" className="navbar order-last order-lg-0">
           <ul>
-            <li><a className="nav-link scrollto" href="index.html">HOME</a></li>
-            <li><a className="nav-link scrollto" href="academia.html">ACADEMIAS E PRAÇAS</a></li>
+            <li><Link to="/" className="nav-link">HOME</Link></li>
+            <li><Link to ="/academia"className="nav-link" >ACADEMIAS E PRAÇAS</Link></li>
             {/* <li><a className="nav-link scrollto" href="dicas.html">DICAS E BEM-ESTAR</a></li> */}
-            <li><a className="nav-link scrollto" href="nutricao.html">NUTRIÇÃO</a></li>
-            <li><a className="nav-link scrollto" href="personal.html">PERSONAL</a></li>
-            <li><a className="nav-link scrollto" href="saudemental.html">SAÚDE MENTAL</a></li>
+            <li><Link to="/nutricao" className="nav-link">NUTRIÇÃO</Link></li>
+            <li><Link to="personal" className="nav-link " >PERSONAL</Link></li>
+            <li><Link to ="saudemental" className="nav-link " >SAÚDE MENTAL</Link></li>
           </ul>
           <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>
-        <a href="#about" className="get-started-btn scrollto">Cadastre seu Negocio</a>
+        <a href="#about" className="get-started-btn scrollto">Cadastre-se</a>
       </div>
     </section>
   );
