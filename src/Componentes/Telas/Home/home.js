@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import"../Academias/styles.css";
+import"../Home/home.css";
 import { FaBiking } from "react-icons/fa";
 import Corrida from "../../img/corrida.jpg";
 import { Link } from 'react-router-dom';
