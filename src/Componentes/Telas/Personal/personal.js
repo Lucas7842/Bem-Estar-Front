@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Personal/personal.css";
@@ -18,12 +17,12 @@ const NavItem = ({ link, text }) => (
 const NavBar = () => (
   <nav id="navbar" className="navbar order-last order-lg-0">
     <ul>
-    <li><Link to="/" className="nav-link">HOME</Link></li>
-            <li><Link to="/academia" className="nav-link">ACADEMIAS E PRAÇAS</Link></li> 
-            {/* <li><Link to="/dicas" className="nav-link">DICAS E BEM-ESTAR</Link></li> */}
-            <li><Link to="/nutricao" className="nav-link">NUTRIÇÃO</Link></li>
-             <li><Link to="/personal" className="nav-link">PERSONAL</Link></li> 
-           {/* <li><Link to="/saudemental" className="nav-link">SAÚDE MENTAL</Link></li>*/}
+      <li><Link to="/" className="nav-link">HOME</Link></li>
+      <li><Link to="/academia" className="nav-link">ACADEMIAS E PRAÇAS</Link></li> 
+      {/* <li><Link to="/dicas" className="nav-link">DICAS E BEM-ESTAR</Link></li> */}
+      <li><Link to="/nutricao" className="nav-link">NUTRIÇÃO</Link></li>
+      <li><Link to="/personal" className="nav-link">PERSONAL</Link></li> 
+      {/* <li><Link to="/saudemental" className="nav-link">SAÚDE MENTAL</Link></li>*/}
     </ul>
     <i className="bi bi-list mobile-nav-toggle"></i>
   </nav>
@@ -59,6 +58,7 @@ const Breadcrumbs = () => {
     </section>
   );
 };
+
 function Teams() {
   return (
     <section id="team" className="team">
@@ -68,7 +68,7 @@ function Teams() {
           <p>UM PERSONAL PARA CHAMAR DE SEU</p>
         </div>
         <div className="row">
-        <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
+          <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
             <div className="member" data-aos="fade-up" data-aos-delay="100">
               <div className="member-img">
                 <img src={Persona} className="img-fluid" alt="Nutri" />
@@ -135,31 +135,45 @@ function Teams() {
               </div>
               <div className="member-info">
                 <h4>Bluefit</h4>
-                <span>Av. Sete de Setembro, 97</span>
+
+                
               </div>
             </div>
           </div>
+
+
+          <div className="Parque">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.7111916548974!2d-46.61223092502629!3d-23.68628407871419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448cfe4516a5%3A0x9e9f810f652c60e0!2sParque%20do%20Pa%C3%A7o!5e0!3m2!1spt-BR!2sbr!4v1715692306894!5m2!1spt-BR!2sbr"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa"
+                    width="300"
+                    height="250"
+                    style={{ border: 0 }}
+                  ></iframe>
+                </div>
+
+
         </div>
       </div>
     </section>
   );
 }
- 
+
 const ContactForm = () => {
   const [cep, setCep] = useState('');
- 
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('CEP enviado:', cep);
   };
- 
+
   return (
     <section id="contact" className="contact">
       <Container data-aos="fade-up">
-        <div className="section-title">
-          <h2>BUSCAR</h2>
-          <p>Encontre próximo a você</p>
-        </div>
+        
         <Row className="mt-5">
           <Col lg={2}>
             <div className="info"></div>
@@ -190,7 +204,7 @@ const ContactForm = () => {
     </section>
   );
 };
- 
+
 function Footer() {
   return (
     <footer id="footer" className="fixed-footer">
@@ -205,17 +219,17 @@ function Footer() {
     </footer>
   );
 };
+
 // Função principal que envolve todos os componentes relacionados a personal
 const Personal = () => (
   <>
-  <NavBar/>
-  <NavItem/>
+    <NavBar />
+    <NavItem />
     <Header />
     <Breadcrumbs />
-    <Teams/>
-    <ContactForm/>
-    <Footer/>
-
+    <Teams />
+    <ContactForm />
+    <Footer />
   </>
 );
 

@@ -282,6 +282,15 @@ body, html {
   margin-bottom: 20px;
 }
 
+.text-center{
+  margin-bottom: 30px;
+}
+
+
+.text-center button {
+  margin-top: 20px;
+}
+
 .search-section .text-center button {
   transition: color 0.3s;
   color: #151515;
@@ -390,4 +399,12 @@ body, html {
   .breadcrumbs ol li+li::before {
     display: none; /* Oculta o separador "/" em telas menores */
   }
+}
+.Parque {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Defina a altura desejada */
+  margin-top: 50px;
+  margin-bottom: -30px;
 }
