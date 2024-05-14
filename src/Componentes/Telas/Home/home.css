@@ -23,7 +23,13 @@
 #header .logo img {
   max-height: 40px;
 }
-
+/* Classe principal do texto home*/
+.about{
+  margin-top: 40px;
+}
+.img-fluid{
+  width: 800px;
+}
 #hero {
   width: 100%;
   height: 100vh;

@@ -23,7 +23,7 @@ function HeaderComponent() {
           </ul>
           <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>
-        <Link to="#about" className="get-started-btn scrollto">Cadastre seu Negocio</Link>
+        <Link to="#about" className="get-started-btn scrollto">Cadastre-se</Link>
       </div>
     </section>
   );
@@ -45,7 +45,7 @@ function HeroSection() {
           <div className="col-xl-2 col-md-4">
             <div className="icon-box">
               <i className="bx bxl-dribbble"></i>
-              <h3><a href="academia.html">ACADEMIAS E PRAÇAS</a></h3>
+              <h3><Link to="/academia">ACADEMIAS E PRAÇAS</Link></h3>
             </div>
           </div>
           {/* <div className="col-xl-2 col-md-4">
@@ -57,19 +57,19 @@ function HeroSection() {
           <div className="col-xl-2 col-md-4">
             <div className="icon-box">
               <i className="bx bx-tachometer"></i>
-              <h3><a href="nutricao.html">NUTRIÇÃO </a></h3>
+              <h3><Link to="/nutricao">NUTRIÇÃO </Link></h3>
             </div>
           </div>
           <div className="col-xl-2 col-md-4">
             <div className="icon-box">
               <i className="bx bx-world"></i>
-              <h3><a href="personal.html">PERSONAL</a></h3>
+              <h3><Link to="/personal">PERSONAL</Link></h3>
             </div>
           </div>
           <div className="col-xl-2 col-md-4">
             <div className="icon-box">
               <i className="bx bx-slideshow"></i>
-              <h3><a href="saudemental.html">SAÚDE MENTAL</a></h3>
+              <h3><Link to="/saudemental">SAÚDE MENTAL</Link></h3>
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ function AboutSection() {
             <img src={Corrida} className="img-fluid" alt="Corrida" />
           </div>
           <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
-            <h3>Sabemos que a saúde e o bem-estar é um dos temas mais antigos e atuais ao mesmo tempo <span>.</span> </h3>
+            <h3 >Sabemos que a saúde e o bem-estar é um dos temas mais antigos e atuais ao mesmo tempo <span>.</span> </h3>
             <p>É também mais do que simplesmente a ausência de doenças, a saúde engloba um estado de equilíbrio e vitalidade que afeta todas as áreas da nossa vida. E é exatamente pensando nisso que desenvolvemos esse site e com ele queremos transformar o conhecimento de bem-estar e saúde em algo ainda mais amplo e acessível.</p>
           </div>
         </div>
@@ -129,7 +129,7 @@ function ServicesSection() {
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div className="icon-box">
               <div className="icon" ><i className={FaBiking} ></i></div>
-              <h4><a href="academia.html">ACADEMIAS E PRAÇAS</a></h4>
+              <h4><Link to="/academia">ACADEMIAS E PRAÇAS</Link></h4>
               <p>Busque por academias, praças e parques próximo à você.</p>
             </div>
           </div>
@@ -143,21 +143,21 @@ function ServicesSection() {
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
             <div className="icon-box">
               <div className="icon"><i className="bx bx-tachometer"></i></div>
-              <h4><a href="nutricao.html">NUTRIÇÃO</a></h4>
+              <h4><Link to="/nutricao">NUTRIÇÃO</Link></h4>
               <p>Busque por profissionais de nutrição próximo à você.</p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
             <div className="icon-box">
               <div className="icon"><i className="bx bx-world"></i></div>
-              <h4><a href="personal.html">PERSONAL</a></h4>
+              <h4><Link to="/personal">PERSONAL</Link></h4>
               <p>Busque por profissionais de personal trainers próximo à você.</p>
             </div>
           </div>
           <div className="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
             <div className="icon-box">
               <div className="icon"><i className="bx bx-slideshow"></i></div>
-              <h4><a href="saudemental.html">SAÚDE MENTAL</a></h4>
+              <h4><Link to="/saudemental">SAÚDE MENTAL</Link></h4>
               <p>Busque por psicólogos e psiquiatras próximo à você.</p>
             </div>
           </div>
