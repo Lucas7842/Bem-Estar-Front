@@ -12,6 +12,9 @@ import Blue from "../../img/team/bluefit.jpg";
 function HeaderComponent() {
   return (
     <section id="header" className="top">
+      <div className="navbar">
+
+      
       <div className="container d-flex align-items-center justify-content-lg-between">
         <h1 className="logo me-auto me-lg-0"><a href="index.html">PD<span>.</span></a></h1>
         <nav id="navbar" className="navbar order-last order-lg-0">
@@ -27,26 +30,11 @@ function HeaderComponent() {
         </nav>
         <a href="#about" className="get-started-btn scrollto">Cadastre-se</a>
       </div>
-    </section>
-  );
-}
-//Breadcrumbs//
-
-function Breadcrumbs() {
-  return (
-    <section className="breadcrumbs">
-      <div className="container">
-        <div className="d-flex justify-content-between align-items-center">
-          <h2>Academias e Praças</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Academias e Praças</li>
-          </ol>
-        </div>
       </div>
     </section>
   );
 }
+
 // Team
 function Team() {
   return (
@@ -204,7 +192,6 @@ class SearchSection extends React.Component {
 const  Academia = ()=> (
   <>
 <HeaderComponent/>
-<Breadcrumbs/>
 <Team/>
 <SearchSection/>
   </>

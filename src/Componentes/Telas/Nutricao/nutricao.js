@@ -17,6 +17,8 @@ const NavItem = ({ link, text }) => (
 
 // Componente para a barra de navegação
 const NavBar = () => (
+
+  <div className="navbar">
   <nav id="navbar" className="navbar order-last order-lg-0">
     <ul>
     <li><Link to="/" className="nav-link">HOME</Link></li>
@@ -28,6 +30,7 @@ const NavBar = () => (
     </ul>
     <i className="bi bi-list mobile-nav-toggle"></i>
   </nav>
+  </div>
 );
 
 // Componente para o cabeçalho
@@ -46,21 +49,7 @@ const Header = () => (
   </header>
 );
 
-const Breadcrumbs = () => {
-  return (
-    <section className="breadcrumbs">
-      <div className="container">
-        <div className="d-flex justify-content-between align-items-center">
-          <h2>Nutrição</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Nutrição</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-  );
-};
+
 // Team Section
 function Teams() {
   return (
@@ -149,9 +138,30 @@ function Teams() {
         </div>
 
       </div>
+      
+      <div className="Parque">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.7209127459146!2d-46.
+                    62194002466606!3d-23.68593657871437!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!
+                    1s0x94ce44f1d7daebd7%3A0xc11b239852d32abb!2sR.%20Orense%2C%2041%20-%20Sala%201001%20-%
+                    20Centro%2C%20Diadema%20-%20SP%2C%2009920-650!5e0!3m2!1spt-BR!2sbr!4v1715729505128!5m2!1spt-BR!2sbr"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Mapa"
+                    width="300"
+                    height="250"
+                    style={{ border: 0 }}
+                  ></iframe>
+                </div>
+                    
+            
     </section>
+
   );
 }
+
+
 // ContactForm
 const ContactForm = () => {
   const [cep, setCep] = useState('');
@@ -165,10 +175,7 @@ const ContactForm = () => {
   return (
     <section id="contact" className="contact">
       <Container data-aos="fade-up">
-        <div className="section-title">
-          <h2>BUSCAR</h2>
-          <p>Encontre próximo a você</p>
-        </div>
+        
         <Row className="mt-5">
           <Col lg={2}>
             <div className="info"></div>
@@ -204,60 +211,14 @@ const ContactForm = () => {
   );
 };
 
-// footer
-// Componente do rodapé
-function Footer() {
-  return (
-    <footer id="footer" className="fixed-footer">
-      <div className="row">
-        <div className="col-lg-3 col-md-6">
-          <div className="footer-info">
-            <h3>PD<span>.</span></h3>
-            <div className="social-links mt-3">
-              <a href="https://twitter.com" className="twitter"><i className="bx bxl-twitter"></i></a>
-              <a href="https://facebook.com" className="facebook"><i className="bx bxl-facebook"></i></a>
-              <a href="https://instagram.com" className="instagram"><i className="bx bxl-instagram"></i></a>
-              <a href="https://linkedin.com" className="linkedin"><i className="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-        </div>
-        <div className="col-lg-2 col-md-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><i className="bx bx-chevron-right"></i> <a href="index.html">HOME</a></li>
-            <li><i className="bx bx-chevron-right"></i> <a href="academia.html">ACADEMIAS E PRAÇAS</a></li>
-            {/* <li><i className="bx bx-chevron-right"></i> <a href="dicas.html">DICAS E BEM-ESTAR </a></li> */}
-            <li><i className="bx bx-chevron-right"></i> <a href="nutricao.html">NUTRIÇÃO</a></li>
-            <li><i className="bx bx-chevron-right"></i> <a href="personal.html">PERSONAL</a></li>
-            <li><i className="bx bx-chevron-right"></i> <a href="saudemental.html">SAÚDE MENTAL</a></li>
-          </ul>
-        </div>
-        <div className="col-lg-4 col-md-6 footer-newsletter">
-          <h4>Our Newsletter</h4>
-          {/* <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p> */}
-          <form action="" method="post">
-            <input type="email" name="email" /><input type="submit" value="se inscrever" />
-          </form>
-        </div>
-      </div>
-      <div className="container">
-        <div className="copyright">
-          &copy; Copyright <strong><span>Portal Diadema Enforma</span></strong>. Todos os direitos reservados
-        </div>
-      </div>
-    </footer>
-  );
 
-};
 const  Nutricao = ()=> (
   <>
 <Header/>
 <NavBar/>
 <NavItem/>
-<Breadcrumbs/>
 <Teams/>
 <ContactForm/>
-<Footer/>
   </>
   );
 

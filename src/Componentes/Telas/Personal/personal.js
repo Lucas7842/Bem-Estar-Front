@@ -43,21 +43,6 @@ const Header = () => (
   </header>
 );
 
-const Breadcrumbs = () => {
-  return (
-    <section className="breadcrumbs">
-      <div className="container">
-        <div className="d-flex justify-content-between align-items-center">
-          <h2>Personal</h2>
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li>Personal</li>
-          </ol>
-        </div>
-      </div>
-    </section>
-  );
-};
 
 function Teams() {
   return (
@@ -144,7 +129,9 @@ function Teams() {
 
           <div className="Parque">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.7111916548974!2d-46.61223092502629!3d-23.68628407871419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448cfe4516a5%3A0x9e9f810f652c60e0!2sParque%20do%20Pa%C3%A7o!5e0!3m2!1spt-BR!2sbr!4v1715692306894!5m2!1spt-BR!2sbr"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3653.7111916548974!2d-46.61223092502629!3d-23.
+                    68628407871419!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce448cfe4516a5%3A0x9e9f810f652c60e0!
+                    2sParque%20do%20Pa%C3%A7o!5e0!3m2!1spt-BR!2sbr!4v1715692306894!5m2!1spt-BR!2sbr"
                     allowfullscreen=""
                     loading="lazy"
                     referrerpolicy="no-referrer-when-downgrade"
@@ -226,7 +213,6 @@ const Personal = () => (
     <NavBar />
     <NavItem />
     <Header />
-    <Breadcrumbs />
     <Teams />
     <ContactForm />
     <Footer />

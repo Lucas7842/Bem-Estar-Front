@@ -391,3 +391,7 @@ body, html {
     display: none; /* Oculta o separador "/" em telas menores */
   }
 }
+
+.navbar {
+ height: 80px;
+}

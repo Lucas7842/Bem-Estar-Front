@@ -391,3 +391,13 @@ body, html {
     display: none; /* Oculta o separador "/" em telas menores */
   }
 }
+
+  .Clinicas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Defina a altura desejada */
+  margin-top: 50px;
+  margin-bottom: -30px;
+}
+
