@@ -282,15 +282,6 @@ body, html {
   margin-bottom: 20px;
 }
 
-.text-center{
-  margin-bottom: 30px;
-}
-
-
-.text-center button {
-  margin-top: 20px;
-}
-
 .search-section .text-center button {
   transition: color 0.3s;
   color: #151515;
@@ -400,7 +391,8 @@ body, html {
     display: none; /* Oculta o separador "/" em telas menores */
   }
 }
-.Parque {
+
+  .Clinicas {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -408,3 +400,4 @@ body, html {
   margin-top: 50px;
   margin-bottom: -30px;
 }
+

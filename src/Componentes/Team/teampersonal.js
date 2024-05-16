@@ -1,19 +1,20 @@
-//ORGANIZA AS IMAGENS E DESCRIÇÃO DA PAGINA ACADEMIA 
+//ORGANIZA AS IMAGENS E DESCRIÇÃO DA PAGINA SAUDE MENTAL
 
 import React, { useState } from "react";
-import Villa from "../../Componentes/img/Fotos/villa.PNG";
-import Pano from "../../Componentes/img/Fotos/panobianco.PNG";
-import Smart from "../../Componentes/img/Fotos/smartfit.jpg";
-import Blue from "../../Componentes/img/Fotos/bluefit.jpg";
 
-function Team() {
+import Persona from "../../Componentes/img/Fotos/persona.png";
+import Perso from "../../Componentes/img/Fotos/personal2.png";
+import Person from "../../Componentes/img/Fotos/personal3.png";
+import Per from "../../Componentes/img/Fotos/personal4.png";
+
+function Teampersonal() {
     return (
         <section id="team" className="team">
           <div className="container" data-aos="fade-up">
      
             <div className="section-title">
-              <h2>Encontre</h2>
-              <p>Sua academia ou praça</p>
+              <h2>MELHORE</h2>
+              <p>SUA SAÚDE MENTAL</p>
             </div>
      
             <div className="row">
@@ -21,7 +22,7 @@ function Team() {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div className="member" data-aos="fade-up" data-aos-delay="100">
                   <div className="member-img">
-                    <img src={Villa} className="img-fluid" alt="Villa" />
+                    <img src={Persona} className="img-fluid" alt="Villa" />
                     <div className="social">
                       <a href=""><i className="bi bi-twitter"></i></a>
                       <a href=""><i className="bi bi-facebook"></i></a>
@@ -30,8 +31,8 @@ function Team() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Villa Fitness</h4>
-                    <span>Rua Antônio Dias Adorno, 250</span>
+                    <h4>Terapeuta Ana Paula</h4>
+                    <span>Rua Antônio Dias Adorno,nº 20 Diadema-SP</span>
                   </div>
                 </div>
               </div>
@@ -39,7 +40,7 @@ function Team() {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div className="member" data-aos="fade-up" data-aos-delay="200">
                   <div className="member-img">
-                    <img src={Pano} className="img-fluid" alt="" />
+                    <img src={Perso} className="img-fluid" alt="" />
                     <div className="social">
                       <a href=""><i className="bi bi-twitter"></i></a>
                       <a href=""><i className="bi bi-facebook"></i></a>
@@ -48,8 +49,8 @@ function Team() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Panabianco</h4>
-                    <span>Av. Presidente Kenedy, 488</span>
+                    <h4>Terapeuta Emília Andressa</h4>
+                    <span>Av. Presidente Kenedy,nº 69 Diadema-SP</span>
                   </div>
                 </div>
               </div>
@@ -57,7 +58,7 @@ function Team() {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div className="member" data-aos="fade-up" data-aos-delay="300">
                   <div className="member-img">
-                    <img src={Smart} className="img-fluid" alt="" />
+                    <img src={Person} className="img-fluid" alt="" />
                     <div className="social">
                       <a href=""><i className="bi bi-twitter"></i></a>
                       <a href=""><i className="bi bi-facebook"></i></a>
@@ -66,8 +67,9 @@ function Team() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Smart fit</h4>
-                    <span>Avenida Nossa Senhora das Vitórias, 188</span>
+                    <h4>Clinica Mental Health</h4>
+                    <span>Av.Nossa Senhora das Vitórias,nº4568 Diadema-SP</span>
+                      
                   </div>
                 </div>
               </div>
@@ -75,7 +77,7 @@ function Team() {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div className="member" data-aos="fade-up" data-aos-delay="400">
                   <div className="member-img">
-                    <img src={Blue} className="img-fluid" alt="" />
+                    <img src={Per} className="img-fluid" alt="" />
                     <div className="social">
                       <a href=""><i className="bi bi-twitter"></i></a>
                       <a href=""><i className="bi bi-facebook"></i></a>
@@ -84,8 +86,8 @@ function Team() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Bluefit</h4>
-                    <span>Av. Sete de Setembro, 97</span>
+                    <h4>Clinica ViVA+</h4>
+                    <span>Av. Sete de Setembro,nº982 Diadema-SP</span>
                   </div>
                 </div>
               </div>
@@ -97,4 +99,4 @@ function Team() {
       );
     }
 
-    export default Team;
+    export default Teampersonal;

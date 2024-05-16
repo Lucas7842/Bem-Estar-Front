@@ -1,19 +1,19 @@
-//ORGANIZA AS IMAGENS E DESCRIÇÃO DA PAGINA ACADEMIA 
+//ORGANIZA AS IMAGENS E DESCRIÇÃO DA PAGINA NUTRIÇÃO 
 
 import React, { useState } from "react";
-import Villa from "../../Componentes/img/Fotos/villa.PNG";
-import Pano from "../../Componentes/img/Fotos/panobianco.PNG";
-import Smart from "../../Componentes/img/Fotos/smartfit.jpg";
-import Blue from "../../Componentes/img/Fotos/bluefit.jpg";
+import Nutri from "../../Componentes/img/Fotos/nutrionista1.png";
+import Nutric from "../../Componentes/img/Fotos/nutricionista2.png";
+import Nutrica from "../../Componentes/img/Fotos/nutricionista3.png";
+import Nutricaoo from "../../Componentes/img/Fotos/nutricionista4.png";
 
-function Team() {
+function Teamnutri() {
     return (
         <section id="team" className="team">
           <div className="container" data-aos="fade-up">
      
             <div className="section-title">
-              <h2>Encontre</h2>
-              <p>Sua academia ou praça</p>
+              <h2>ENCONTRE</h2>
+              <p>O CAMINHO PARA UMA BOA ALIMENTAÇÃO</p>
             </div>
      
             <div className="row">
@@ -21,7 +21,7 @@ function Team() {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div className="member" data-aos="fade-up" data-aos-delay="100">
                   <div className="member-img">
-                    <img src={Villa} className="img-fluid" alt="Villa" />
+                    <img src={Nutri} className="img-fluid" alt="Villa" />
                     <div className="social">
                       <a href=""><i className="bi bi-twitter"></i></a>
                       <a href=""><i className="bi bi-facebook"></i></a>
@@ -30,8 +30,8 @@ function Team() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Villa Fitness</h4>
-                    <span>Rua Antônio Dias Adorno, 250</span>
+                    <h4>Drª.Maria da Graça</h4>
+                    <span>Rua Antônio Dias Adorno,nº 3000 Diadema-SP</span>
                   </div>
                 </div>
               </div>
@@ -39,7 +39,7 @@ function Team() {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div className="member" data-aos="fade-up" data-aos-delay="200">
                   <div className="member-img">
-                    <img src={Pano} className="img-fluid" alt="" />
+                    <img src={Nutric} className="img-fluid" alt="" />
                     <div className="social">
                       <a href=""><i className="bi bi-twitter"></i></a>
                       <a href=""><i className="bi bi-facebook"></i></a>
@@ -48,8 +48,8 @@ function Team() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Panabianco</h4>
-                    <span>Av. Presidente Kenedy, 488</span>
+                    <h4>Clinica Saúde e Amor</h4>
+                    <span>Av. Presidente Kenedy,nº 3232 Diadema-SP</span>
                   </div>
                 </div>
               </div>
@@ -57,7 +57,7 @@ function Team() {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div className="member" data-aos="fade-up" data-aos-delay="300">
                   <div className="member-img">
-                    <img src={Smart} className="img-fluid" alt="" />
+                    <img src={Nutrica} className="img-fluid" alt="" />
                     <div className="social">
                       <a href=""><i className="bi bi-twitter"></i></a>
                       <a href=""><i className="bi bi-facebook"></i></a>
@@ -66,8 +66,9 @@ function Team() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Smart fit</h4>
-                    <span>Avenida Nossa Senhora das Vitórias, 188</span>
+                    <h4>Drª Fernanda Martins</h4>
+                    <span>Av.Nossa Senhora das Vitórias,nº32 Diadema-SP</span>
+                      
                   </div>
                 </div>
               </div>
@@ -75,7 +76,7 @@ function Team() {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div className="member" data-aos="fade-up" data-aos-delay="400">
                   <div className="member-img">
-                    <img src={Blue} className="img-fluid" alt="" />
+                    <img src={Nutricaoo} className="img-fluid" alt="" />
                     <div className="social">
                       <a href=""><i className="bi bi-twitter"></i></a>
                       <a href=""><i className="bi bi-facebook"></i></a>
@@ -84,8 +85,8 @@ function Team() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Bluefit</h4>
-                    <span>Av. Sete de Setembro, 97</span>
+                    <h4>Point Fit </h4>
+                    <span>Av. Sete de Setembro,nº 48 Diadema-SP</span>
                   </div>
                 </div>
               </div>
@@ -97,4 +98,4 @@ function Team() {
       );
     }
 
-    export default Team;
+    export default Teamnutri;

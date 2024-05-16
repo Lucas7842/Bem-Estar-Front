@@ -1,0 +1,404 @@
+#header {
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 0px 0;
+    background: rgba(0, 0, 0, 0.8); /* Adicionando background diretamente */
+  }
+  
+  #header .logo {
+    font-size: 32px;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff; /* Definindo cor do logo */
+  }
+  
+  #header .logo span {
+    color: #ffc451; /* Cor da parte destacada do logo */
+  }
+  
+  #header .logo img {
+    max-height: 40px;
+  }
+  
+  #hero {
+    width: 100%;
+    height: 100vh;
+    background: url("/src/Componentes/img/hero-bg.jpeg") top center;
+    background-size: cover;
+    position: relative;
+  }
+  
+  #hero:before {
+    content: "";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  #hero .container {
+    position: relative;
+    padding-top: 74px;
+    text-align: center;
+  }
+  
+  #hero h1 {
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  #hero h1 span {
+    color: #ffc451;
+  }
+  
+  #hero h2 {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 10px 0 0 0;
+    font-size: 24px;
+  }
+  
+  .icon-box {
+    padding: 30px 20px;
+    transition: ease-in-out 0.3s;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    height: 100%;
+    text-align: center;
+  }
+  
+  .icon-box i {
+    font-size: 32px;
+    line-height: 1;
+    color: #ffc451;
+  }
+  
+  .icon-box h3 {
+    font-weight: 700;
+    margin: 10px 0 0 0;
+    padding: 0;
+    line-height: 1;
+    font-size: 20px;
+    line-height: 26px;
+    color: #fff; /* Definindo cor do título */
+  }
+  
+  .icon-box h3 a {
+    color: #fff;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .icon-box h3 a:hover {
+    color: #ffc451;
+  }
+  
+  .icon-box:hover {
+    border-color: #ffc451;
+  }
+  
+  @media (min-width: 1024px) {
+    #hero {
+      background-attachment: fixed;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero {
+      height: auto;
+    }
+  
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #hero h2 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+  
+  .about .content h3 {
+    font-weight: 700;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    color: #000; /* Definindo cor do título */
+  }
+  
+  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about .content ul li {
+    padding: 0 0 8px 26px;
+    position: relative;
+  }
+  
+  .about .content ul i {
+    position: absolute;
+    font-size: 20px;
+    left: 0;
+    top: -3px;
+    color: #ffc451;
+  }
+  
+  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  .services .icon-box {
+    text-align: center;
+    border: 1px solid #ebebeb;
+    padding: 80px 20px;
+    transition: all ease-in-out 0.3s;
+    background: #fff;
+  }
+  
+  .services .icon-box .icon {
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    background: #ffc451;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  
+  .services .icon-box .icon i {
+    color: #151515;
+    font-size: 28px;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .services .icon-box h4 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    font-size: 24px;
+    color: #151515;
+  }
+  
+  .services .icon-box h4 a {
+    color: #151515;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .services .icon-box h4 a:hover {
+    color: #ffc451;
+  }
+  
+  .services .icon-box p {
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+  
+  .services .icon-box:hover {
+    border-color: #fff;
+    box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+    transform: translateY(-10px);
+  }
+  
+  body, html {
+    height: 100%; /* Ensures full height */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .main-content {
+    flex: 1; /* Takes up all available space */
+    padding-bottom: 100px; /* Adjust this value based on the footer's actual height */
+  }
+  
+  
+  #footer .copyright {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
+  #footer .credits {
+    padding-top: 10px;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+  }
+  
+  
+  #navbar ul {
+    display: flex; /* This will align your li elements side by side */
+    list-style: none; /* Removes bullet points */
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    color: white;
+  }
+  
+  #navbar li {
+    padding: 0 10px; /* Adds horizontal padding between links */
+  }
+  
+  #navbar a {
+    text-decoration: none; /* Optional: Removes underline from links */
+  }
+  
+  
+  .fixed-footer {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  .fixed-footer p {
+    margin: 0;
+  }
+  
+  .fixed-footer a {
+    color: white;
+  }
+  
+  /*Team Section*/
+  .search-section {
+    background: #fff;
+    padding: 60px 0;
+  }
+  
+  .search-section .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .search-section .text-center button {
+    transition: color 0.3s;
+    color: #151515;
+    margin: 0 3px;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.8);
+    transition: ease-in-out 0.3s;
+    color: #484848;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+  }
+  
+  .search-section .text-center button:hover {
+    color: #151515;
+    background: #ffc451;
+  }
+  
+  .search-section #map {
+    height: 400px;
+    width: 100%;
+  }
+  
+  .search-section #resultsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .search-section #resultsTable th,
+  .search-section #resultsTable td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  .search-section #resultsTable th {
+    background-color: #f2f2f2;
+  }
+  /*Aqui começa o css da página de nutrição*/
+  /* Breadcrumbs  */
+  /* Define o estilo da seção de migalhas de pão */
+  .breadcrumbs {
+    padding: 15px 0; /* Adiciona preenchimento acima e abaixo da seção */
+    background: whitesmoke; /* Define o fundo da seção */
+    min-height: 40px; /* Define a altura mínima da seção */
+    margin-top: 74px; /* Adiciona uma margem superior */
+  }
+  
+  /* Define o estilo do título da seção de migalhas de pão */
+  .breadcrumbs h2 {
+    font-size: 28px; /* Define o tamanho da fonte */
+    font-weight: 400; /* Define a espessura da fonte */
+    margin: 0; /* Remove a margem padrão */
+  }
+  
+  /* Define o estilo da lista ordenada de migalhas de pão */
+  .breadcrumbs ol {
+    display: flex; /* Exibe os itens da lista em linha */
+    flex-wrap: wrap; /* Permite que os itens da lista quebrem para a próxima linha se necessário */
+    list-style: none; /* Remove os marcadores de lista */
+    padding: 0; /* Remove o preenchimento interno */
+    margin: 0; /* Remove a margem padrão */
+  }
+  
+  /* Define o estilo para os itens da lista de migalhas de pão, exceto o primeiro */
+  .breadcrumbs ol li+li {
+    padding-left: 10px; /* Adiciona espaço à esquerda entre os itens */
+  }
+  
+  /* Define o estilo para o separador entre os itens da lista de migalhas de pão */
+  .breadcrumbs ol li+li::before {
+    display: inline-block; /* Exibe o separador como um bloco inline */
+    padding-right: 10px; /* Adiciona espaço à direita do separador */
+    color: #2f2f2f; /* Define a cor do separador */
+    content: "/"; /* Define o conteúdo do separador */
+  }
+  
+  /* Define o estilo para telas menores que 992px */
+  @media (max-width: 992px) {
+    .breadcrumbs {
+      margin-top: 68px; /* Redefine a margem superior para telas menores */
+    }
+  
+    .breadcrumbs .d-flex {
+      display: block !important; /* Exibe o container de forma de bloco */
+    }
+  
+    .breadcrumbs ol {
+      display: block; /* Exibe os itens da lista em bloco */
+      padding: 5px 0; /* Adiciona um pequeno preenchimento vertical */
+    }
+  
+    .breadcrumbs ol li {
+      display: inline-block; /* Exibe os itens da lista em linha */
+      padding: 5px 10px; /* Adiciona um pequeno preenchimento */
+    }
+  
+    .breadcrumbs ol li+li {
+      padding-left: 0; /* Remove o preenchimento à esquerda entre os itens */
+    }
+  
+    .breadcrumbs ol li+li::before {
+      display: none; /* Oculta o separador "/" em telas menores */
+    }
+  }
+  
+    .Clinicas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px; /* Defina a altura desejada */
+    margin-top: 50px;
+    margin-bottom: -30px;
+  }
+  
+  

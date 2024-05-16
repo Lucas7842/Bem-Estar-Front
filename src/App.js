@@ -1,20 +1,34 @@
 
 import './App.css';
-//import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 //import ConsultaUsuario from './Componentes/ConsultaUsuario'; 
-//import Personal from "./Componentes/Telas/Personal/personal"
-//import Home from"./Componentes/Telas/Home/home"
+import Personal from "./Componentes/Telas/Personal/personal"
+import Home from"./Componentes/Telas/Home/home"
 import Academia from "./Componentes/Telas/Academias/academia"
-//import Nutricao from './Componentes/Telas/Nutricao/nutricao'
+import Nutricao from './Componentes/Telas/Nutricao/nutricao'
+import Saudemental from './Componentes/Page/saudemental';
 
 function App() {
   return (
-    <div className="App">
+   <BrowserRouter>
+   <Routes>
+ 
+ 
+    <Route path='/' element={<Home/>}/>
+ 
+    <Route path='/nutricao' element={<Nutricao/>}/>
+ 
+    <Route path='/academia' element={<Academia/>}/>
+ 
+    <Route path='/personal' element={<Personal/>}/>
 
-     <Academia/>
+    <Route path='/saudemental' element={<Saudemental/>}/>
 
-
-    </div>
+    </Routes>
+   </BrowserRouter>
   );
 }
+ 
 export default App;
+ 

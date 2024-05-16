@@ -9,6 +9,7 @@ import About2 from "../../About2/about2";
 import Service from "../../Service/service";
 import Footer from "../../Footer/footer";
 
+
 const Home = () => (
   <>
     <Header />
