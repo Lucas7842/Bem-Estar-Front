@@ -1,8 +1,9 @@
 // HEADER DE TODAS AS PAGINAS
-
-import React, { useState } from "react";
+import "../Header/header.css";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from 'react-router-dom';
+import { NavDropdown } from 'react-bootstrap';
 
 function Header() {
   return (
@@ -15,15 +16,23 @@ function Header() {
             <li><Link to="/academia" className="nav-link">ACADEMIAS/PRAÇAS</Link></li>
             {/* <li><Link to="/dicas" className="nav-link">DICAS E BEM-ESTAR</Link></li> */}
             <li><Link to="/nutricao" className="nav-link">NUTRIÇÃO</Link></li>
-             <li><Link to="/personal" className="nav-link">PERSONAL</Link></li>
-           <li><Link to="/saudemental" className="nav-link">SAÚDE MENTAL</Link></li>
-           <li><Link to="/login" className="nav-link">Login</Link></li>
+            <li><Link to="/personal" className="nav-link">PERSONAL</Link></li>
+            <li><Link to="/saudemental" className="nav-link">SAÚDE MENTAL</Link></li>
+            <li><Link to="/login" className="nav-link">LOGIN</Link></li>
           </ul>
           <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>
-        <Link to="#about" className="get-started-btn scrollto">Cadastre-se</Link>
+        <NavDropdown title="CADASTRE-SE" id="signupDropdown" className="custom-dropdown">
+          <NavDropdown.Item as="div">
+            <Link to="/signup/usuario" className="dropdown-item">Usuário</Link>
+          </NavDropdown.Item>
+          <NavDropdown.Item as="div">
+            <Link to="/signup/profissional" className="dropdown-item">Profissional</Link>
+          </NavDropdown.Item>
+        </NavDropdown>
       </div>
     </section>
   );
 }
-  export default Header;
+
+export default Header;
