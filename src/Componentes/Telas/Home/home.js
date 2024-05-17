@@ -18,7 +18,7 @@ const Home = () => (
     <About2 />
     <Service />
     <Footer />
-    
+  
 
   </>
 );

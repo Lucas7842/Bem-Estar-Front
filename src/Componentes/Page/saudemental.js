@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "../../Componentes/Page/style.css";
+import "../../Componentes/Page/saudemental.css";
 
 
 import Teamsaudemental from "../Team/teamsaudemental";

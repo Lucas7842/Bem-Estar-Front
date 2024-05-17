@@ -1,8 +1,7 @@
 
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
-//import ConsultaUsuario from './Componentes/ConsultaUsuario'; 
+//import Profissional from './Componentes/ConsultaUsuario';
 import Personal from "./Componentes/Telas/Personal/personal"
 import Home from"./Componentes/Telas/Home/home"
 import Academia from "./Componentes/Telas/Academias/academia"
@@ -27,6 +26,7 @@ function App() {
     <Route path='/saudemental' element={<Saudemental/>}/>
 
     <Route path='/login' element={<Login/>}/>
+  {/* <Route path='/profissional' element={<Profissional/>}/> */}
 
     </Routes>
    </BrowserRouter>

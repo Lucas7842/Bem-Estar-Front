@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
-import { cadastrarUsuario } from "../UsuarioService";
+import { cadastrarProfissional} from "../UsuarioService";
 
-const CadastroUsuario = () => {
+const Profissional = () => {
   const [usuario, setUsuario] = useState({
     nome: "",
     profissional: "",
@@ -81,7 +81,7 @@ const CadastroUsuario = () => {
       return;
     }
 
-    cadastrarUsuario(usuario)
+    cadastrarProfissional(usuario)
       .then((response) => {
         setMsgSuccess("Cadastro realizado com sucesso!");
         setUsuario({
@@ -221,4 +221,4 @@ const CadastroUsuario = () => {
   );
 };
 
-export default CadastroUsuario;
+export default Profissional;
