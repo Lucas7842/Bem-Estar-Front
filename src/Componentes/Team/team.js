@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import Villa from "../../Componentes/img/Fotos/villa.PNG";
 import Pano from "../../Componentes/img/Fotos/panobianco.PNG";
-import Smart from "../../Componentes/img/Fotos/smartfit.jpg";
-import Blue from "../../Componentes/img/Fotos/bluefit.jpg";
+import ParquePaco from "../../Componentes/img/Fotos/parquepaco.jpg"
+import PracaMoca from "../../Componentes/img/Fotos/pracadamoca.jpg"
 
 function Team() {
     return (
@@ -48,7 +48,7 @@ function Team() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Panabianco</h4>
+                    <h4>Panobianco</h4>
                     <span>Av. Presidente Kenedy, 488</span>
                   </div>
                 </div>
@@ -57,7 +57,7 @@ function Team() {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div className="member" data-aos="fade-up" data-aos-delay="300">
                   <div className="member-img">
-                    <img src={Smart} className="img-fluid" alt="" />
+                    <img src={ParquePaco} className="img-fluid" alt="" />
                     <div className="social">
                       <a href=""><i className="bi bi-twitter"></i></a>
                       <a href=""><i className="bi bi-facebook"></i></a>
@@ -66,8 +66,8 @@ function Team() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Smart fit</h4>
-                    <span>Avenida Nossa Senhora das Vitórias, 188</span>
+                    <h4>Parque do Paço</h4>
+                    <span>Rua Alm. Barroso 111, Diadema-SP </span>
                   </div>
                 </div>
               </div>
@@ -75,7 +75,7 @@ function Team() {
               <div className="col-lg-3 col-md-6 d-flex align-items-stretch">
                 <div className="member" data-aos="fade-up" data-aos-delay="400">
                   <div className="member-img">
-                    <img src={Blue} className="img-fluid" alt="" />
+                    <img src={PracaMoca} className="img-fluid" alt="" />
                     <div className="social">
                       <a href=""><i className="bi bi-twitter"></i></a>
                       <a href=""><i className="bi bi-facebook"></i></a>
@@ -84,8 +84,8 @@ function Team() {
                     </div>
                   </div>
                   <div className="member-info">
-                    <h4>Bluefit</h4>
-                    <span>Av. Sete de Setembro, 97</span>
+                    <h4>Praça da Moça</h4>
+                    <span>Av. Alda - Centro, Diadema - SP</span>
                   </div>
                 </div>
               </div>

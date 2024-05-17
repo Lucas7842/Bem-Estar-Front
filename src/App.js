@@ -8,6 +8,7 @@ import Home from"./Componentes/Telas/Home/home"
 import Academia from "./Componentes/Telas/Academias/academia"
 import Nutricao from './Componentes/Telas/Nutricao/nutricao'
 import Saudemental from './Componentes/Page/saudemental';
+import Login from './Componentes/Telas/Login/login';
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
     <Route path='/personal' element={<Personal/>}/>
 
     <Route path='/saudemental' element={<Saudemental/>}/>
+
+    <Route path='/login' element={<Login/>}/>
 
     </Routes>
    </BrowserRouter>
