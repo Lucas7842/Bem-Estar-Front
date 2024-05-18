@@ -13,7 +13,7 @@ function Header() {
         <nav id="navbar" className="navbar order-last order-lg-0">
           <ul>
             <li><Link to="/" className="nav-link">HOME</Link></li>
-            <li><Link to="/academia" className="nav-link">ACADEMIAS/PRAÇAS</Link></li>
+            <li><Link to="/academia" className="nav-link">ACADEMIAS</Link></li>
             {/* <li><Link to="/dicas" className="nav-link">DICAS E BEM-ESTAR</Link></li> */}
             <li><Link to="/nutricao" className="nav-link">NUTRIÇÃO</Link></li>
             <li><Link to="/personal" className="nav-link">PERSONAL</Link></li>
