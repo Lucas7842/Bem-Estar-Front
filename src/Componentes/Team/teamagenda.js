@@ -6,7 +6,7 @@ import 'react-datepicker/dist/react-datepicker.css';
 import './agendar.css';
 import AgendarAulaPage from '../Telas/AgendarAula/AgendarAulaPage';
 
-const AgendarAula = () => {
+function TeamAgenda  () {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
   const [selectedLocation, setSelectedLocation] = useState('');
@@ -75,4 +75,4 @@ const AgendarAula = () => {
   );
 };
 
-export default AgendarAulaPage;
+export default TeamAgenda;
