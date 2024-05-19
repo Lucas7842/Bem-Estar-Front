@@ -18,6 +18,8 @@ function Header() {
             <li><Link to="/nutricao" className="nav-link">NUTRIÇÃO</Link></li>
             <li><Link to="/personal" className="nav-link">PERSONAL</Link></li>
             <li><Link to="/saudemental" className="nav-link">SAÚDE MENTAL</Link></li>
+            <li><Link to="/agendaraula" className="nav-link">AGENDAR AULA</Link></li>
+            <li><Link to="/consultaraula" className="nav-link">CONSULTAR AULA</Link></li>
             <li><Link to="/login" className="nav-link">LOGIN</Link></li>
           </ul>
           <i className="bi bi-list mobile-nav-toggle"></i>
