@@ -3,7 +3,7 @@
 }
 
 .custom-dropdown .dropdown-menu {
-  background-color: white; /* Se quiser mudar a cor do fundo do dropdown */
+  background-color: rgb(0, 0, 0); /* Se quiser mudar a cor do fundo do dropdown */
 }
 
 .custom-dropdown .dropdown-item {
@@ -12,7 +12,3 @@
 
 /* Pode apagar se quiser*/
 
-/* Remover cor de fundo das opções do submenu */
-.custom-dropdown .dropdown-menu .dropdown-item {
-  background-color: transparent;
-}
