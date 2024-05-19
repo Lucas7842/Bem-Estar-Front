@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+// src/Componentes/Telas/AgendarAula/AgendarAulaPage.js
+
+import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Header from "../../Header/header";
-import AgendarAula from "../../AgendarAula/AgendarAula"; // Ajuste o caminho conforme necessário
+import AgendarAula from "../../TeamAgenda/agendar"; // Ajuste o caminho conforme necessário
 
 const AgendarAulaPage = () => (
   <>
