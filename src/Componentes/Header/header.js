@@ -1,9 +1,8 @@
-// HEADER DE TODAS AS PAGINAS
-import "../Header/header.css";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from 'react-router-dom';
 import { NavDropdown } from 'react-bootstrap';
+import "../Header/header.css";
 
 function Header() {
   return (
@@ -14,12 +13,17 @@ function Header() {
           <ul>
             <li><Link to="/" className="nav-link">HOME</Link></li>
             <li><Link to="/academia" className="nav-link">ACADEMIAS/PRAÇAS</Link></li>
-            {/* <li><Link to="/dicas" className="nav-link">DICAS E BEM-ESTAR</Link></li> */}
             <li><Link to="/nutricao" className="nav-link">NUTRIÇÃO</Link></li>
             <li><Link to="/personal" className="nav-link">PERSONAL</Link></li>
             <li><Link to="/saudemental" className="nav-link">SAÚDE MENTAL</Link></li>
-            <li><Link to="/agendaraula" className="nav-link">AGENDAR AULA</Link></li>
-            <li><Link to="/consultaraula" className="nav-link">CONSULTAR AULA</Link></li>
+            <NavDropdown title="AULAS" id="aulasDropdown" className="nav-link">
+              <NavDropdown.Item as="div">
+                <Link to="/agendaraula" className="dropdown-item">AGENDAR AULA</Link>
+              </NavDropdown.Item>
+              <NavDropdown.Item as="div">
+                <Link to="/consultaraula" className="dropdown-item">CONSULTAR AULA</Link>
+              </NavDropdown.Item>
+            </NavDropdown>
             <li><Link to="/login" className="nav-link">LOGIN</Link></li>
           </ul>
           <i className="bi bi-list mobile-nav-toggle"></i>
