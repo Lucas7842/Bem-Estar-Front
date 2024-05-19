@@ -1,7 +1,3 @@
-.navbar-nav .nav-item {
-  margin-right: 15px; /* Aumente o valor para mais espaçamento */
-}
-
 .custom-dropdown .dropdown-toggle {
   color: white !important;
 }
@@ -14,24 +10,5 @@
   color: black; /* Se quiser mudar a cor dos itens do dropdown */
 }
 
-.navbar .nav-link {
-  padding: 10px 15px;
-  text-decoration: none;
-  color: #000;
-}
+/* Pode apagar se quiser*/
 
-.navbar .nav-link:hover {
-  background-color: #f1f1f1;
-}
-
-.custom-dropdown .dropdown-menu {
-  background-color: #f9f9f9;
-}
-
-.custom-dropdown .dropdown-item {
-  color: #000;
-}
-
-.custom-dropdown .dropdown-item:hover {
-  background-color: #f1f1f1;
-}
