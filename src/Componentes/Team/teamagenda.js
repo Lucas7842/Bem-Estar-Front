@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import './agendar.css';
+import AgendarAulaPage from '../Telas/AgendarAula/AgendarAulaPage';
 
 const AgendarAula = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -74,4 +75,4 @@ const AgendarAula = () => {
   );
 };
 
-export default AgendarAula;
+export default AgendarAulaPage;
