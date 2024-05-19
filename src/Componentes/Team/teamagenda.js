@@ -3,8 +3,7 @@
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import './agendar.css';
-import AgendarAulaPage from '../Telas/AgendarAula/AgendarAulaPage';
+import '../../Componentes/Telas/AgendarAula/agendar.css';
 
 function TeamAgenda  () {
   const [selectedDate, setSelectedDate] = useState(null);
