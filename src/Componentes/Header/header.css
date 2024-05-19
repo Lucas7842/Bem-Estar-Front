@@ -3,12 +3,11 @@
 }
 
 .custom-dropdown .dropdown-menu {
-  background-color: white; /* Se quiser mudar a cor do fundo do dropdown */
+  background-color: white /* Se quiser mudar a cor do fundo do dropdown */
 }
 
 .custom-dropdown .dropdown-item {
-  color: black; /* Se quiser mudar a cor dos itens do dropdown */
+  color: rgb(10, 10, 10); /* Se quiser mudar a cor dos itens do dropdown */
 }
-
 /* Pode apagar se quiser*/
 
