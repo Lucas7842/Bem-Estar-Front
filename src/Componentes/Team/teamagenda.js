@@ -1,8 +1,9 @@
+// src/Componentes/Team/agendar.js
+
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './AgendarAula.css';
+import './agendar.css';
 
 const AgendarAula = () => {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -23,7 +24,6 @@ const AgendarAula = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // Aqui você pode adicionar a lógica para enviar os dados de agendamento
     console.log('Data:', selectedDate);
     console.log('Horário:', selectedTime);
     console.log('Local:', selectedLocation);
