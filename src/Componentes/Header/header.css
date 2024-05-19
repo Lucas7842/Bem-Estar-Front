@@ -12,3 +12,7 @@
 
 /* Pode apagar se quiser*/
 
+/* Remover cor de fundo das opções do submenu */
+.custom-dropdown .dropdown-menu .dropdown-item {
+  background-color: transparent;
+}
