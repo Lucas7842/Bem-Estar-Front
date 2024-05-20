@@ -1,35 +1,50 @@
+/* src/Componentes/Telas/AgendarAula/agendar.css */
+
 .agendar-aula-container {
-    max-width: 500px;
-    margin: 50px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .agendar-aula-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
-  .form-control {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-  }
-  
-  .btn {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-  }
-  
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+.agendar-aula-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: center; /* Centraliza o texto dentro do grupo de formulários */
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: center; /* Centraliza o texto dentro dos campos do formulário */
+  border: none; /* Remove a borda padrão */
+  border-bottom: 1px solid #ffc451; /* Adiciona uma linha fina embaixo com a cor #ffc451 */
+}
+
+
+.btn {
+  width: 100%;
+  padding: 12px; /* Ajuste o valor conforme necessário */
+  box-sizing: border-box;
+  background-color: #ffc451; /* Define a cor de fundo do botão */
+  border: none; /* Remove a borda padrão do botão */
+  color: #000; /* Define a cor do texto do botão */
+  transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+}
+
+.btn:hover {
+  background-color: #ffc451; /* Mantém a mesma cor ao passar o mouse */
+}

@@ -1,11 +1,12 @@
-// src/Componentes/Team/agendar.js
-
 import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+import moment from 'moment'; // Importa Moment.js
+import 'moment/locale/pt-br'; // Importa o idioma pt-br
 import '../../Componentes/Telas/AgendarAula/agendar.css';
+import { cadastrarAgendamento } from "../UsuarioService";
 
-function TeamAgenda  () {
+function TeamAgenda() {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
   const [selectedLocation, setSelectedLocation] = useState('');
@@ -22,11 +23,22 @@ function TeamAgenda  () {
     setSelectedLocation(event.target.value);
   };
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    console.log('Data:', selectedDate);
-    console.log('Horário:', selectedTime);
-    console.log('Local:', selectedLocation);
+    try {
+      const dadosAgendamento = {
+        data: moment(selectedDate).format(), // Converte a data para o formato ISO8601
+        horario: moment(selectedTime).format(), // Converte o horário para o formato ISO8601
+        local: selectedLocation
+      };
+
+      // Chama a função cadastrarAgendamento do UsuarioService para enviar os dados para o backend
+      await cadastrarAgendamento(dadosAgendamento);
+     
+      console.log('Agendamento cadastrado com sucesso!');
+    } catch (error) {
+      console.error('Erro ao cadastrar agendamento:', error.message);
+    }
   };
 
   return (
@@ -39,7 +51,9 @@ function TeamAgenda  () {
             selected={selectedDate}
             onChange={handleDateChange}
             dateFormat="dd/MM/yyyy"
+            locale="pt-br" // Define o idioma para português do Brasil
             className="form-control"
+            popperPlacement="right-start" // Altera o posicionamento do pop-up do calendário
           />
         </div>
         <div className="form-group">
@@ -51,24 +65,24 @@ function TeamAgenda  () {
             showTimeSelectOnly
             timeIntervals={30}
             timeCaption="Horário"
-            dateFormat="HH:mm"
+            dateFormat="HH:mm" // Define o formato para exibir horas em formato de 24 horas
+            locale="pt-br" // Define o idioma para português do Brasil
             className="form-control"
+            popperPlacement="right-start" // Altera o posicionamento do pop-up do calendário
           />
         </div>
         <div className="form-group">
           <label>Local:</label>
-          <select
+          <input
+            type="text"
             value={selectedLocation}
             onChange={handleLocationChange}
             className="form-control"
-          >
-            <option value="">Selecione o local</option>
-            <option value="Local 1">Local 1</option>
-            <option value="Local 2">Local 2</option>
-            <option value="Local 3">Local 3</option>
-          </select>
+            placeholder="Digite o local"
+            style={{ padding: '12px' }} // Estilo embutido para aumentar o preenchimento
+          />
         </div>
-        <button type="submit" className="btn btn-primary">Agendar</button>
+        <button type="submit" className="btn btn-primary" style={{ backgroundColor: '#ffc451', border: 'none' }}>Agendar</button>
       </form>
     </div>
   );
