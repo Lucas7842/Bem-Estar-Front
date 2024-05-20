@@ -16,7 +16,7 @@ function Header() {
             <li><Link to="/nutricao" className="nav-link">NUTRIÇÃO</Link></li>
             <li><Link to="/personal" className="nav-link">PERSONAL</Link></li>
             <li><Link to="/saudemental" className="nav-link">SAÚDE MENTAL</Link></li>
-            <NavDropdown title="AULAS" id="aulasDropdown" className="nav-link">
+            <NavDropdown title="AULAS" id="aulasDropdown" className="custom-dropdown">
               <NavDropdown.Item as="div">
                 <Link to="/agendaraula" className="dropdown-item">AGENDAR AULA</Link>
               </NavDropdown.Item>

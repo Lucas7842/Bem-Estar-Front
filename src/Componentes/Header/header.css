@@ -9,5 +9,8 @@
 .custom-dropdown .dropdown-item {
   color: rgb(10, 10, 10); /* Se quiser mudar a cor dos itens do dropdown */
 }
-/* Pode apagar se quiser*/
+.custom-dropdown .dropdown-item:hover {
+  background-color: #ffc451; /* Altera a cor de fundo quando o cursor passa por cima */
+  color: black; /* Altera a cor do texto quando o cursor passa por cima */
+}
 
