@@ -10,19 +10,18 @@ function TeamAgenda() {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
   const [selectedLocation, setSelectedLocation] = useState('');
-
+ 
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
-
+ 
   const handleTimeChange = (time) => {
     setSelectedTime(time);
   };
-
+ 
   const handleLocationChange = (event) => {
     setSelectedLocation(event.target.value);
   };
-
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -31,7 +30,6 @@ function TeamAgenda() {
         horario: moment(selectedTime).format(), // Converte o horário para o formato ISO8601
         local: selectedLocation
       };
-
       // Chama a função cadastrarAgendamento do UsuarioService para enviar os dados para o backend
       await cadastrarAgendamento(dadosAgendamento);
      
@@ -40,7 +38,7 @@ function TeamAgenda() {
       console.error('Erro ao cadastrar agendamento:', error.message);
     }
   };
-
+ 
   return (
     <div className="agendar-aula-container">
       <h2>Agendar Aula</h2>
@@ -87,5 +85,5 @@ function TeamAgenda() {
     </div>
   );
 };
-
+ 
 export default TeamAgenda;

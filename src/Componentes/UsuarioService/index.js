@@ -1,35 +1,55 @@
 import axios from "axios";
- 
+
 const baseURLProfissional = "http://localhost:8080/api/v1/usuarioprofissional";
 const baseURLAgendamento = "http://localhost:8080/api/v1/agendamento";
- 
-// Função para cadastrar um profissional
-export const cadastrarProfissional = (dadosProfissional, metodo = 'post') => {
+
+// Função para realizar operações CRUD em um profissional
+export const operacoesProfissional = (dadosProfissional, metodo = 'post') => {
   // Verifica se o método especificado é válido
-  if (!['post', 'get'].includes(metodo)) {
+  if (!['post', 'get', 'put', 'delete', 'patch'].includes(metodo)) {
     throw new Error('Método HTTP inválido');
   }
- 
+
   // Executa a requisição com o método especificado
-  if (metodo === 'post') {
-    return axios.post(baseURLProfissional, dadosProfissional);
-  } else if (metodo === 'get') {
-    return axios.get(baseURLProfissional);
+  switch (metodo) {
+    case 'post':
+      return axios.post(baseURLProfissional, dadosProfissional);
+    case 'get':
+      return axios.get(baseURLProfissional);
+    case 'put':
+      return axios.put(baseURLProfissional, dadosProfissional);
+    case 'delete':
+      return axios.delete(baseURLProfissional);
+    case 'patch':
+      return axios.patch(baseURLProfissional, dadosProfissional);
+    default:
+      throw new Error('Método HTTP inválido');
   }
 };
- 
-// Função para cadastrar um agendamento
+
+// Função para realizar operações CRUD em um agendamento
 export const cadastrarAgendamento = (dadosAgendamento, metodo = 'post') => {
   // Verifica se o método especificado é válido
-  if (!['post', 'get'].includes(metodo)) {
+  if (!['post', 'get', 'put', 'delete', 'patch'].includes(metodo)) {
     throw new Error('Método HTTP inválido');
   }
- 
+
   // Executa a requisição com o método especificado
-  if (metodo === 'post') {
-    return axios.post(baseURLAgendamento, dadosAgendamento);
-  } else if (metodo === 'get') {
-    return axios.get(baseURLAgendamento);
+  switch (metodo) {
+    case 'post':
+      return axios.post(baseURLAgendamento, dadosAgendamento);
+    case 'get':
+      return axios.get(baseURLAgendamento);
+    case 'put':
+      return axios.put(baseURLAgendamento, dadosAgendamento);
+    case 'delete':
+      return axios.delete(baseURLAgendamento);
+    case 'patch':
+      return axios.patch(baseURLAgendamento, dadosAgendamento);
+    default:
+      throw new Error('Método HTTP inválido');
   }
 };
+
+
  
