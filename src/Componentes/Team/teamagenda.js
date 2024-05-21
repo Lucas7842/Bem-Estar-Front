@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
-import DatePicker from 'react-datepicker';
+import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import moment from 'moment'; // Importa Moment.js
-import 'moment/locale/pt-br'; // Importa o idioma pt-br
+import moment from 'moment';
+import 'moment/locale/pt-br';
+import ptBR from 'date-fns/locale/pt-BR'; // Importa o locale do date-fns
 import '../../Componentes/Telas/AgendarAula/agendar.css';
 import { cadastrarAgendamento } from "../UsuarioService";
+
+// Registra o locale do date-fns no react-datepicker
+registerLocale('pt-BR', ptBR);
+
+// Configura o moment para usar o locale pt-br
+moment.locale('pt-br');
 
 function TeamAgenda() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -22,6 +29,7 @@ function TeamAgenda() {
   const handleLocationChange = (event) => {
     setSelectedLocation(event.target.value);
   };
+ 
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -49,7 +57,7 @@ function TeamAgenda() {
             selected={selectedDate}
             onChange={handleDateChange}
             dateFormat="dd/MM/yyyy"
-            locale="pt-br" // Define o idioma para português do Brasil
+            locale="pt-BR" // Define o idioma para português do Brasil
             className="form-control"
             popperPlacement="right-start" // Altera o posicionamento do pop-up do calendário
           />
@@ -64,7 +72,7 @@ function TeamAgenda() {
             timeIntervals={30}
             timeCaption="Horário"
             dateFormat="HH:mm" // Define o formato para exibir horas em formato de 24 horas
-            locale="pt-br" // Define o idioma para português do Brasil
+            locale="pt-BR" // Define o idioma para português do Brasil
             className="form-control"
             popperPlacement="right-start" // Altera o posicionamento do pop-up do calendário
           />

@@ -4,7 +4,7 @@ const baseURLProfissional = "http://localhost:8080/api/v1/usuarioprofissional";
 const baseURLAgendamento = "http://localhost:8080/api/v1/agendamento";
 
 // Função para realizar operações CRUD em um profissional
-export const operacoesProfissional = (dadosProfissional, metodo = 'post') => {
+export const cadastrarProfissional = (dadosProfissional, metodo = 'post') => {
   // Verifica se o método especificado é válido
   if (!['post', 'get', 'put', 'delete', 'patch'].includes(metodo)) {
     throw new Error('Método HTTP inválido');
