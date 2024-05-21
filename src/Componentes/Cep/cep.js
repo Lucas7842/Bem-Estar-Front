@@ -36,7 +36,7 @@ function Cep() {
 
         setLoading(true);
         
-        const apiUrl = `https://api.exemplo.com/${tipo}?cep=${cep}&radius=10`;
+        const apiUrl = `https://api.seuservico.com/${tipo}?cep=${cep}&radius=10`; // Substitua pela URL real da sua API
         console.log(`Fetching data from: ${apiUrl}`);
         
         // Exemplo de API fictícia - Substitua pela sua API
@@ -49,11 +49,15 @@ function Cep() {
             })
             .then(data => {
                 console.log('Data received:', data);
-                setEstabelecimentos(data);
 
-                // Ajustar o centro do mapa para o primeiro resultado (se houver)
-                if (data.length > 0) {
+                // Verificar se os dados estão no formato esperado
+                if (Array.isArray(data) && data.length > 0 && data[0].latitude && data[0].longitude) {
+                    setEstabelecimentos(data);
+
+                    // Ajustar o centro do mapa para o primeiro resultado (se houver)
                     setCenter([data[0].latitude, data[0].longitude]);
+                } else {
+                    alert('Nenhum estabelecimento encontrado ou dados no formato inesperado.');
                 }
 
                 setLoading(false);
@@ -119,8 +123,7 @@ function Cep() {
                                 <Marker key={index} position={[estabelecimento.latitude, estabelecimento.longitude]}>
                                     <Popup>
                                         <strong>{estabelecimento.nome}</strong><br />
-                                        {estabelecimento.endereco}<br />
-                                        Avaliação: {estabelecimento.rating}
+                                        {estabelecimento.endereco}
                                     </Popup>
                                 </Marker>
                             ))}
@@ -131,7 +134,6 @@ function Cep() {
                                 <tr>
                                     <th>Nome</th>
                                     <th>Endereço</th>
-                                    <th>Avaliação</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -139,7 +141,6 @@ function Cep() {
                                     <tr key={index}>
                                         <td>{estabelecimento.nome}</td>
                                         <td>{estabelecimento.endereco}</td>
-                                        <td>{estabelecimento.rating}</td>
                                     </tr>
                                 ))}
                             </tbody>
