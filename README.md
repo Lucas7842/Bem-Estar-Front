@@ -5,7 +5,7 @@ Site de Busca de Bem-Estar e Saúde
 #Projeto Portal Diadema ENforma
 ODS 3 – Objetivo de Desenvolvimento Sustentável 3 - Afim de assegurar uma vida saudável e promover o bem-estar para todas e todos, em todas as idades , 
 desenvolvemos um site catálogo de busca por locais como praças e academias mais próximos e profissionais como Personal Trainer, Nutricionistas, 
-Psicólogos e Psiquiatras. Mente sã, corpo sã!
+Psicólogos e Psiquiatras. Mente sã, corpo sã!!
 
 
 
