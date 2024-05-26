@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
+<<<<<<< HEAD
 import moment from 'moment'; // Importa Moment.js
 import 'moment/locale/pt-br'; // Importa o idioma pt-br
 import pt from 'date-fns/locale/pt-BR'; // Importa o locale de date-fns para react-datepicker
@@ -9,6 +10,19 @@ import { cadastrarAgendamento } from "../UsuarioService";
 
 // Registra o locale para o react-datepicker
 registerLocale('pt-BR', pt);
+=======
+import moment from 'moment';
+import 'moment/locale/pt-br';
+import ptBR from 'date-fns/locale/pt-BR'; // Importa o locale do date-fns
+import '../../Componentes/Telas/AgendarAula/agendar.css';
+import { cadastrarAgendamento } from "../UsuarioService";
+
+// Registra o locale do date-fns no react-datepicker
+registerLocale('pt-BR', ptBR);
+
+// Configura o moment para usar o locale pt-br
+moment.locale('pt-br');
+>>>>>>> e231bffd97eb9b2527364b5c8082f44bf5b7f6a0
 
 function TeamAgenda() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -26,7 +40,11 @@ function TeamAgenda() {
   const handleLocationChange = (event) => {
     setSelectedLocation(event.target.value);
   };
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> e231bffd97eb9b2527364b5c8082f44bf5b7f6a0
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
@@ -91,5 +109,9 @@ function TeamAgenda() {
     </div>
   );
 };
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> e231bffd97eb9b2527364b5c8082f44bf5b7f6a0
 export default TeamAgenda;

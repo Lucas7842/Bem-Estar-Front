@@ -5,13 +5,15 @@ import Header from "../../Header/header";
 import Cep from "../../Cep/cep";
 import Teamnutri from "../../Team/teamnutri";
 
+
 //import { Link } from 'react-router-dom';
 
 const Nutricao = () => (
   <>
     <Header />
     <Teamnutri />
-    <Cep />
+    <Cep />*
+    
 
 
   </>
