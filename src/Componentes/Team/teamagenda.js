@@ -1,10 +1,14 @@
 import React, { useState } from 'react';
-import DatePicker from 'react-datepicker';
+import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import moment from 'moment'; // Importa Moment.js
 import 'moment/locale/pt-br'; // Importa o idioma pt-br
+import pt from 'date-fns/locale/pt-BR'; // Importa o locale de date-fns para react-datepicker
 import '../../Componentes/Telas/AgendarAula/agendar.css';
 import { cadastrarAgendamento } from "../UsuarioService";
+
+// Registra o locale para o react-datepicker
+registerLocale('pt-BR', pt);
 
 function TeamAgenda() {
   const [selectedDate, setSelectedDate] = useState(null);
@@ -22,14 +26,16 @@ function TeamAgenda() {
   const handleLocationChange = (event) => {
     setSelectedLocation(event.target.value);
   };
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
       const dadosAgendamento = {
-        data: moment(selectedDate).format(), // Converte a data para o formato ISO8601
-        horario: moment(selectedTime).format(), // Converte o horário para o formato ISO8601
+        data: moment(selectedDate).format('DD/MM/YYYY'), // Formato DD/MM/YYYY para a data
+        horario: moment(selectedTime).format('HH:mm'), // Formato HH:mm para o horário
         local: selectedLocation
       };
+      
       // Chama a função cadastrarAgendamento do UsuarioService para enviar os dados para o backend
       await cadastrarAgendamento(dadosAgendamento);
      
@@ -38,7 +44,7 @@ function TeamAgenda() {
       console.error('Erro ao cadastrar agendamento:', error.message);
     }
   };
- 
+
   return (
     <div className="agendar-aula-container">
       <h2>Agendar Aula</h2>
@@ -49,7 +55,7 @@ function TeamAgenda() {
             selected={selectedDate}
             onChange={handleDateChange}
             dateFormat="dd/MM/yyyy"
-            locale="pt-br" // Define o idioma para português do Brasil
+            locale="pt-BR" // Define o idioma para português do Brasil
             className="form-control"
             popperPlacement="right-start" // Altera o posicionamento do pop-up do calendário
           />
@@ -64,7 +70,7 @@ function TeamAgenda() {
             timeIntervals={30}
             timeCaption="Horário"
             dateFormat="HH:mm" // Define o formato para exibir horas em formato de 24 horas
-            locale="pt-br" // Define o idioma para português do Brasil
+            locale="pt-BR" // Define o idioma para português do Brasil
             className="form-control"
             popperPlacement="right-start" // Altera o posicionamento do pop-up do calendário
           />
@@ -85,5 +91,5 @@ function TeamAgenda() {
     </div>
   );
 };
- 
+
 export default TeamAgenda;

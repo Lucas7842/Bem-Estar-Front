@@ -84,6 +84,7 @@ const Profissional = () => {
     cadastrarProfissional(usuario)
       .then((response) => {
         setMsgSuccess("Cadastro realizado com sucesso!");
+        console.log("Usuário profissional cadastrado com sucesso no H2!");
         setUsuario({
           nome: "",
           profissional: "",

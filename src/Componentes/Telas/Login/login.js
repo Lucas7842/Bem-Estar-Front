@@ -1,9 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Login/login.css'
 
 import {
-
-
   MDBBtn,
   MDBContainer,
   MDBRow,
@@ -12,10 +11,7 @@ import {
   MDBCardBody,
   MDBInput,
   MDBIcon
-}
-from 'mdb-react-ui-kit';
-
-
+} from 'mdb-react-ui-kit';
 
 function Login() {
   return (
@@ -33,7 +29,7 @@ function Login() {
               <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Email' id='formControlLg' type='email' size="lg"/>
               <MDBInput wrapperClass='mb-4 mx-5 w-100' labelClass='text-white' label='Senha' id='formControlLg' type='password' size="lg"/>
 
-              <p className="small mb-3 pb-lg-2"><a class="text-white-50" href="#!">Esqueci minha senha!</a></p>
+              <p className="small mb-3 pb-lg-2"><a className="text-white-50" href="#!">Esqueci minha senha!</a></p>
               <MDBBtn outline className='mx-2 px-5' color='white' size='lg'>
                 Login
               </MDBBtn>
@@ -53,8 +49,7 @@ function Login() {
               </div>
 
               <div>
-                <p className="mb-0">Ainda não tem cadastro? <a href="#!" class="text-white-50 fw-bold">Cadastre-se</a></p>
-
+                <p className="mb-0">Ainda não tem cadastro? <Link to="/cadastrar-usuario" className="text-white-50 fw-bold">Cadastre-se</Link></p>
               </div>
             </MDBCardBody>
           </MDBCard>
