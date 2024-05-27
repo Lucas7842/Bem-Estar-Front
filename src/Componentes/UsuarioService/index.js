@@ -53,7 +53,7 @@ export const cadastrarAgendamento = (dadosAgendamento, metodo = 'post') => {
 };
 
 // Função para realizar operações CRUD em um usuário
-export const operacoesUsuario = (dadosUsuario, metodo = 'post') => {
+export const cadastrarUsuario = (dadosUsuario, metodo = 'post') => {
   // Verifica se o método especificado é válido
   if (!['post', 'get', 'put', 'delete', 'patch'].includes(metodo)) {
     throw new Error('Método HTTP inválido');

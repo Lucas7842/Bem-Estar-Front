@@ -1,10 +1,63 @@
-body {
-    /* fallback for old browsers */
-  
-  
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(255, 255, 255, 0.8),white(0, 0, 0, 0.8));
-  
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.8))
-  }
+/* src/Componentes/Telas/Login/login.css */
+
+.login-container {
+  max-width: 400px; /* Adjusted to fit the login card */
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff; /* Changed to white background */
+  color: #000; /* Changed to black text for contrast */
+  text-align: center;
+}
+
+.login-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000; /* Ensure the header text is black */
+}
+
+.form-group {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000; /* Ensure labels are black */
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  border: none;
+  border-bottom: 1px solid #ffc451;
+  background-color: transparent; /* Ensures the background is white */
+  color: #000; /* Black text */
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  box-sizing: border-box;
+  background-color: #ffc451;
+  border: none;
+  color: #000;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #e6b140; /* Slightly darker shade for hover */
+}
+
+.login-container a {
+  color: #000; /* Set link color to black */
+}
+
+.login-container a:hover {
+  color: #444; /* Slightly darker shade for hover */
+}

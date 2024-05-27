@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./styles.css";
+import "./cadastroprofissional.css";
 import { cadastrarProfissional} from "../UsuarioService";
 
 const Profissional = () => {

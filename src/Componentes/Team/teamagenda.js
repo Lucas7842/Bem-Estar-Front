@@ -1,63 +1,55 @@
 import React, { useState } from 'react';
 import DatePicker, { registerLocale } from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-<<<<<<< HEAD
-import moment from 'moment'; // Importa Moment.js
-import 'moment/locale/pt-br'; // Importa o idioma pt-br
-import pt from 'date-fns/locale/pt-BR'; // Importa o locale de date-fns para react-datepicker
-import '../../Componentes/Telas/AgendarAula/agendar.css';
-import { cadastrarAgendamento } from "../UsuarioService";
-
-// Registra o locale para o react-datepicker
-registerLocale('pt-BR', pt);
-=======
 import moment from 'moment';
 import 'moment/locale/pt-br';
-import ptBR from 'date-fns/locale/pt-BR'; // Importa o locale do date-fns
-import '../../Componentes/Telas/AgendarAula/agendar.css';
-import { cadastrarAgendamento } from "../UsuarioService";
+import pt from 'date-fns/locale/pt-BR';
+import './agendar.css';
+import { cadastrarAgendamento } from '../../UsuarioService';
+import { useNavigate } from 'react-router-dom'; // Importando o hook useNavigate
 
-// Registra o locale do date-fns no react-datepicker
-registerLocale('pt-BR', ptBR);
-
-// Configura o moment para usar o locale pt-br
+registerLocale('pt-BR', pt);
 moment.locale('pt-br');
->>>>>>> e231bffd97eb9b2527364b5c8082f44bf5b7f6a0
 
-function TeamAgenda() {
+function AgendarAulaPage() {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
   const [selectedLocation, setSelectedLocation] = useState('');
- 
+  const [successMessage, setSuccessMessage] = useState('');
+  const navigate = useNavigate(); // Inicializando o hook useNavigate
+
   const handleDateChange = (date) => {
     setSelectedDate(date);
   };
- 
+
   const handleTimeChange = (time) => {
     setSelectedTime(time);
   };
- 
+
   const handleLocationChange = (event) => {
     setSelectedLocation(event.target.value);
   };
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> e231bffd97eb9b2527364b5c8082f44bf5b7f6a0
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
       const dadosAgendamento = {
-        data: moment(selectedDate).format('DD/MM/YYYY'), // Formato DD/MM/YYYY para a data
-        horario: moment(selectedTime).format('HH:mm'), // Formato HH:mm para o horário
+        data: moment(selectedDate).format('DD/MM/YYYY'),
+        horario: moment(selectedTime).format('HH:mm'),
         local: selectedLocation
       };
-      
-      // Chama a função cadastrarAgendamento do UsuarioService para enviar os dados para o backend
+
       await cadastrarAgendamento(dadosAgendamento);
-     
-      console.log('Agendamento cadastrado com sucesso!');
+
+      const successMsg = 'Agendamento cadastrado com sucesso!';
+      console.log(successMsg);
+      setSuccessMessage(successMsg);
+
+      // Redirecionar para a página do cabeçalho após 2 segundos
+      setTimeout(() => {
+        navigate('/'); // Redirecionando para a página do cabeçalho
+      }, 2000);
+
     } catch (error) {
       console.error('Erro ao cadastrar agendamento:', error.message);
     }
@@ -73,9 +65,9 @@ function TeamAgenda() {
             selected={selectedDate}
             onChange={handleDateChange}
             dateFormat="dd/MM/yyyy"
-            locale="pt-BR" // Define o idioma para português do Brasil
+            locale="pt-BR"
             className="form-control"
-            popperPlacement="right-start" // Altera o posicionamento do pop-up do calendário
+            popperPlacement="right-start"
           />
         </div>
         <div className="form-group">
@@ -87,10 +79,10 @@ function TeamAgenda() {
             showTimeSelectOnly
             timeIntervals={30}
             timeCaption="Horário"
-            dateFormat="HH:mm" // Define o formato para exibir horas em formato de 24 horas
-            locale="pt-BR" // Define o idioma para português do Brasil
+            dateFormat="HH:mm"
+            locale="pt-BR"
             className="form-control"
-            popperPlacement="right-start" // Altera o posicionamento do pop-up do calendário
+            popperPlacement="right-start"
           />
         </div>
         <div className="form-group">
@@ -101,17 +93,14 @@ function TeamAgenda() {
             onChange={handleLocationChange}
             className="form-control"
             placeholder="Digite o local"
-            style={{ padding: '12px' }} // Estilo embutido para aumentar o preenchimento
+            style={{ padding: '12px' }}
           />
         </div>
         <button type="submit" className="btn btn-primary" style={{ backgroundColor: '#ffc451', border: 'none' }}>Agendar</button>
       </form>
+      {successMessage && <div className="success-message">{successMessage}</div>}
     </div>
   );
-};
-<<<<<<< HEAD
+}
 
-=======
- 
->>>>>>> e231bffd97eb9b2527364b5c8082f44bf5b7f6a0
-export default TeamAgenda;
+export default AgendarAulaPage;
