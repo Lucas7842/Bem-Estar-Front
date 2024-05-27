@@ -8,13 +8,14 @@ import Header from "../Header/header";
 import Cep from "../Cep/cep";
 
 
+
 //import { Link } from 'react-router-dom';
 
 const Saudemental = () => (
   <>
     <Header />
-    <Teamsaudemental/>
-    <Cep/>
+    <Teamsaudemental />
+    <Cep />
 
 
   </>
