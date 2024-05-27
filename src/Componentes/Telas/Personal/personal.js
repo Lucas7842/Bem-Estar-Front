@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Personal/personal.css";
 
@@ -13,9 +13,9 @@ import Cep from "../../Cep/cep";
 
 const Saudemental = () => (
   <>
-    <Header/>
-    <Teampersonal/>
-    <Cep/>
+    <Header />
+    <Teampersonal />
+    <Cep />
 
 
   </>
