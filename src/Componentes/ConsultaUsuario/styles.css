@@ -1,265 +1,86 @@
-
-
-* {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-}
-
-body {
-    background-image: url(../img/cadastro.jpeg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
 .container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 100px;
+  max-width: 500px;
+  margin: 50px auto;
 }
 
 .card {
-    background-color: #ffffff80;
-    padding: 30px;
-    border-radius: 4%;
-    box-shadow: 3px 3px 1px 0px #00000060;
-    width: 35%;
-    display: flex;
-    justify-content: space-between;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ffc451;
-}
-
-.label-float input {
-    width: 100%;
-    padding: 5px 5px;
-    display: inline-block;
-    border: 0;
-    border-bottom: 2px solid #000;
-    background-color: transparent;
-    outline: none;
-    min-width: 180px;
-    font-size: 16px;
-    transition: all 0.3s ease-out;
-    border-radius: 0;
+.card h1 {
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .label-float {
-    position: relative;
-    padding-top: 25px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    flex: 1;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.label-float input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ffc451;
+  outline: none;
+  background-color: transparent;
+  transition: border-color 0.3s;
 }
 
 .label-float input:focus {
-    border-bottom: 2px solid #ffc451;
+  border-bottom-color: #ffc451;
 }
 
 .label-float label {
-    color: #000;
-    pointer-events: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-top: 13px;
-    transition: all 0.3s ease-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  pointer-events: none;
+  transition: top 0.3s, font-size 0.3s;
 }
 
-.label-float input:focus + label,
-.label-float input:valid + label {
-    font-size: 13px;
-    margin-top: 0;
-    color: #ffc451;
+.label-float input:valid + label,
+.label-float input:focus + label {
+  top: -20px;
+  font-size: 14px;
+  color: #000;
 }
 
-button {
-    background-color: transparent;
-    border-color: #ffc451;
-    color: #ffc451;
-    padding: 7px;
-    font-weight: bold;
-    font-size: 12pt;
-    margin-top: 20px;
-    border-radius: 4px;
-    cursor: pointer;
-    outline: none;
-    transition: all 0.4s ease-out;
-}
-
-button:hover {
-    background-color: #ffc451;
-    color: #fff;
-}
-
-.justify-center {
-    display: flex;
-    justify-content: center;
-}
-
-.fa-eye {
-    position: absolute;
-    top: 15px;
-    right: 10px;
-    cursor: pointer;
-    color: #ffc451;
+#msgError,
+#msgSuccess {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 #msgError {
-    text-align: center;
-    color: #ff0000;
-    background-color: #ffbbbb;
-    padding: 10px;
-    border-radius: 4px;
-    display: none;
+  color: red;
 }
 
 #msgSuccess {
-    text-align: center;
-    color: #00bb00;
-    background-color: #bbffbe;
-    padding: 10px;
-    border-radius: 4px;
-    display: none;
-}
-/* Apartir daqui começa o css da academia */
-.breadcrumbs {
-    padding: 15px 0;
-    background: whitesmoke;
-    min-height: 40px;
-    margin-top: 74px;
-  }
-  
-  .breadcrumbs h2 {
-    font-size: 28px;
-    font-weight: 400;
-    margin-right: 10px;
-  }
-  
-  .breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .breadcrumbs ol li + li {
-    padding-left: 10px;
-  }
-  
-  .breadcrumbs ol li + li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #2f2f2f;
-    content: "/";
-  }
-  
-  @media (max-width: 992px) {
-    .breadcrumbs {
-      margin-top: 68px;
-    }
-  
-    .breadcrumbs .d-flex {
-      display: block !important;
-    }
-  
-    .breadcrumbs ol {
-      display: block;
-    }
-  
-    .breadcrumbs ol li {
-      display: inline-block;
-    }
-  }
-
-  /* Código do Team*/
-  /* Team.css */
-
-.team-container {
-  padding: 60px 0;
+  color: #4caf50;
 }
 
-.member {
-  margin-bottom: 20px;
-  overflow: hidden;
-  border-radius: 5px;
-  background: #fff;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.member-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.social {
-  position: absolute;
-  left: 0;
-  bottom: 30px;
-  right: 0;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
+.justify-center {
   text-align: center;
 }
 
-.social a {
-  transition: color 0.3s;
-  color: #151515;
-  margin: 0 3px;
-  border-radius: 4px;
-  width: 36px;
-  height: 36px;
-  background: rgba(255, 255, 255, 0.8);
-  transition: ease-in-out 0.3s;
-  color: #484848;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffc451;
+  border: none;
+  color: #000;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.social a:hover {
-  color: #151515;
-  background: #ffc451;
-}
-
-.social i {
-  font-size: 18px;
-  line-height: 0;
-}
-
-.member-info {
-  padding: 25px 15px;
-}
-
-.member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #151515;
-}
-
-.member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.member-info p {
-  font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
-}
-
-.member:hover .social {
-  opacity: 1;
-  bottom: 15px;
+button:hover {
+  background-color: #e6b140;
 }

@@ -2,6 +2,7 @@ import axios from "axios";
 
 const baseURLProfissional = "http://localhost:8080/api/v1/usuarioprofissional";
 const baseURLAgendamento = "http://localhost:8080/api/v1/agendamento";
+const baseURLUsuario = "http://localhost:8080/api/v1/usuario"; // Adicione esta linha
 
 // Função para realizar operações CRUD em um profissional
 export const cadastrarProfissional = (dadosProfissional, metodo = 'post') => {
@@ -51,5 +52,26 @@ export const cadastrarAgendamento = (dadosAgendamento, metodo = 'post') => {
   }
 };
 
+// Função para realizar operações CRUD em um usuário
+export const cadastrarUsuario = (dadosUsuario, metodo = 'post') => {
+  // Verifica se o método especificado é válido
+  if (!['post', 'get', 'put', 'delete', 'patch'].includes(metodo)) {
+    throw new Error('Método HTTP inválido');
+  }
 
- 
+  // Executa a requisição com o método especificado
+  switch (metodo) {
+    case 'post':
+      return axios.post(baseURLUsuario, dadosUsuario);
+    case 'get':
+      return axios.get(baseURLUsuario);
+    case 'put':
+      return axios.put(baseURLUsuario, dadosUsuario);
+    case 'delete':
+      return axios.delete(baseURLUsuario);
+    case 'patch':
+      return axios.patch(baseURLUsuario, dadosUsuario);
+    default:
+      throw new Error('Método HTTP inválido');
+  }
+};

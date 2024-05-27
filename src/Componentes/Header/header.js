@@ -30,7 +30,7 @@ function Header() {
         </nav>
         <NavDropdown title="CADASTRE-SE" id="signupDropdown" className="custom-dropdown">
           <NavDropdown.Item as="div">
-            <Link to="/signup/usuario" className="nav-link">Usuário</Link>
+            <Link to="/cadastrar-usuario" className="nav-link">Usuário</Link>
           </NavDropdown.Item>
           <NavDropdown.Item as="div">
             <Link to="/profissional" className="nav-link">Profissional</Link>

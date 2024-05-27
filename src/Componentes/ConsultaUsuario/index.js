@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./styles.css";
+import "./cadastroprofissional.css";
 import { cadastrarProfissional} from "../UsuarioService";
 
 const Profissional = () => {
@@ -84,6 +84,7 @@ const Profissional = () => {
     cadastrarProfissional(usuario)
       .then((response) => {
         setMsgSuccess("Cadastro realizado com sucesso!");
+        console.log("Usuário profissional cadastrado com sucesso no H2!");
         setUsuario({
           nome: "",
           profissional: "",

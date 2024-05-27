@@ -1,0 +1,17 @@
+/* consultar.css */
+
+.consulta-aulas-container {
+    margin: 50px auto;
+    text-align: center;
+  }
+  
+  .filtro-container {
+    display: inline-block;
+    margin-left: 20px; /* Adiciona um espaço à esquerda do filtro */
+  }
+  
+  .filtro-container label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  

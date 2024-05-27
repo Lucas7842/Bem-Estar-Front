@@ -1,4 +1,3 @@
-// src/App.js
 import React from 'react';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -9,7 +8,10 @@ import Personal from "./Componentes/Telas/Personal/personal";
 import Saudemental from './Componentes/Page/saudemental';
 import Login from './Componentes/Telas/Login/login';
 import AgendarAulaPage from './Componentes/Telas/AgendarAula/AgendarAulaPage';
-import Cep from './Componentes/Cep/cep'; // Ajuste o caminho conforme necessário
+import CadastrarUsuarioPage from './Componentes/Telas/CadastrarUsuario/CadastrarUsuarioPage';
+import ConsultarAulaPage from './Componentes/Telas/ConsultarAula/ConsultarAulaPage'; // Importe o novo componente
+//import Profissional from './Componentes/ConsultaUsuario/index'
+
 
 function App() {
   return (
@@ -22,7 +24,9 @@ function App() {
         <Route path='/saudemental' element={<Saudemental />} />
         <Route path='/login' element={<Login />} />
         <Route path='/agendaraula' element={<AgendarAulaPage />} />
-        <Route path='/buscar' element={<Cep />} /> {/* Nova rota para o componente Cep */}
+        <Route path='/cadastrar-usuario' element={<CadastrarUsuarioPage />} />
+        <Route path='/consultaraula' element={<ConsultarAulaPage />} /> {/* Rota para a página de consulta de aulas */}
+        {/*<Route path='/profissional' element={<Profissional />} /> */}
       </Routes>
     </BrowserRouter>
   );
