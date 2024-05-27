@@ -15,6 +15,7 @@ function AgendarAulaPage() {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
   const [selectedLocation, setSelectedLocation] = useState('');
+  const [successMessage, setSuccessMessage] = useState(null); // Define successMessage state
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
@@ -39,7 +40,7 @@ function AgendarAulaPage() {
 
       await cadastrarAgendamento(dadosAgendamento);
 
-      console.log('Agendamento cadastrado com sucesso!');
+      setSuccessMessage('Agendamento cadastrado com sucesso!'); // Set success message
     } catch (error) {
       console.error('Erro ao cadastrar agendamento:', error.message);
     }
@@ -93,4 +94,4 @@ function AgendarAulaPage() {
   );
 };
 
-export default TeamAgenda;
+export default AgendarAulaPage;
