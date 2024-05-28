@@ -28,14 +28,7 @@ function Header() {
           </ul>
           <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>
-        <NavDropdown title="CADASTRE-SE" id="signupDropdown" className="custom-dropdown">
-          <NavDropdown.Item as="div">
-            <Link to="/cadastrar-usuario" className="nav-link">Usuário</Link>
-          </NavDropdown.Item>
-          <NavDropdown.Item as="div">
-            <Link to="/profissional" className="nav-link">Profissional</Link>
-          </NavDropdown.Item>
-        </NavDropdown>
+        <a href="/CadastrarUsuario" className="get-started-btn scrollto">Cadastre-se</a>
       </div>
     </section>
   );

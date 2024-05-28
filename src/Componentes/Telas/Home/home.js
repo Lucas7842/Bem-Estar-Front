@@ -5,7 +5,6 @@ import "../Home/home.css";
 import Header from "../../Header/header";
 import Section from "../../Section/section";
 import About from "../../About/about";
-import About2 from "../../About2/about2";
 import Service from "../../Service/service";
 import Footer from "../../Footer/footer";
 
@@ -15,7 +14,6 @@ const Home = () => (
     <Header />
     <Section />
     <About />
-    <About2 />
     <Service />
     <Footer />
 

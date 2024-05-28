@@ -3,7 +3,7 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from 'react-router-dom';
-//import "bootstrap/dist/js/bootstrap.min.js";
+import "bootstrap/dist/js/bootstrap.min.js";
 function Section() {
   return (
     <section id="hero" className="d-flex align-items-center justify-content-center">
