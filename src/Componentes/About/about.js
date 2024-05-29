@@ -2,13 +2,13 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Corrida from "../../Componentes/img/corrida.jpg";
 import Corda from "../../Componentes/img/corda.PNG";
-import AboutStyles from "../About/aboutStyles.css";
+//import AboutStyles from "../About/aboutStyles.css";
 
 function About() {
   return (
     <>
-      <section id="about" className="about">
-        <div className={AboutStyles.someClass} data-aos="fade-up">
+      <section id="sobre1" className="sobre">
+        <div className="container" data-aos="fade-up">
           <div className="row">
             <div className="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
               <img src={Corrida} className="img-fluid" alt="Corrida" />
@@ -20,19 +20,24 @@ function About() {
           </div>
         </div>
       </section>
-      <section id="abaut" className="abaout">
+      <section id="sobre1" className="sobre">
         <div className="container" data-aos="fade-up">
           <div className="row">
-            <img src={Corda} className="img-fluid" alt="Corda" />
-            <div className="col-lg-6" data-aos="fade-left" data-aos-delay="100">
-              <div className="icon-box mt-5 mt-lg-0" data-aos="zoom-in" data-aos-delay="150">
-                <h3>São inúmeros os benefícios que se tem quando se investe na sua saúde <span>.</span></h3>
-                <p>Além de viver uma vida mais longa, você desfruta de uma vida mais gratificante e plena. Ter energia para realizar suas paixões, estar em sintonia com seu corpo e mente, e encontrar alegria nas pequenas coisas são apenas algumas das recompensas que aguardam aqueles que priorizam sua saúde.</p>
-              </div>
+            <div className="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+              <img src={Corda} className="img-fluid" alt="Corda" />
+            </div>
+            <div className="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right" data-aos-delay="100">
+              <h3>São inúmeros os benefícios que se tem quando se investe na sua saúde <span>.</span></h3>
+              <p>Além de viver uma vida mais longa, você desfruta de uma vida mais gratificante e plena.
+                Ter energia para realizar suas paixões, estar em sintonia com seu corpo e mente, e encontrar alegria nas pequenas coisas são apenas algumas das recompensas que aguardam aqueles que priorizam sua saúde.</p>
             </div>
           </div>
         </div>
       </section>
+
+
+
+
     </>
   );
 }
