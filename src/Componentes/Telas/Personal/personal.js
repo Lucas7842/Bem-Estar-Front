@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Personal/personal.css";
+import Footer from "../../Footer/footer";
 
 
 import Teampersonal from "../../Team/teampersonal";
@@ -16,6 +17,7 @@ const Saudemental = () => (
     <Header />
     <Teampersonal />
     <Cep />
+    <Footer />
 
 
   </>

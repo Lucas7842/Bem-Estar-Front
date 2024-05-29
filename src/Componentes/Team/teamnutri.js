@@ -25,7 +25,7 @@ function Teamnutri() {
                   <a href="#"><i className="bi bi-twitter"></i></a>
                   <a href="#"><i className="bi bi-facebook"></i></a>
                   <a href="#"><i className="bi bi-instagram"></i></a>
-                  <a href="#"><i className="bi bi-linkedin"></i></a>
+                  <a href="#"><i className="bi bi-calendar"></i></a>
                 </div>
               </div>
               <div className="member-info">
@@ -40,10 +40,10 @@ function Teamnutri() {
               <div className="member-img">
                 <img src={Nutric} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href="#" className="twitter"><i className="bi bi-twitter"></i></a>
-                  <a href="#" className="twitter"><i className="bi bi-facebook"></i></a>
-                  <a href="#" className="twitter"><i className="bi bi-instagram"></i></a>
-                  <a href="#" className="twitter"><i className="bi bi-linkedin"></i></a>
+                  <a href=""><i className="bi bi-twitter"></i></a>
+                  <a href=""><i className="bi bi-facebook"></i></a>
+                  <a href=""><i className="bi bi-instagram"></i></a>
+                  <a href=""><i className="bi bi-calendar"></i></a>
                 </div>
               </div>
               <div className="member-info">
@@ -61,7 +61,7 @@ function Teamnutri() {
                   <a href=""><i className="bi bi-twitter"></i></a>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                  <a href=""><i className="bi bi-linkedin"></i></a>
+                  <a href=""><i className="bi bi-calendar"></i></a>
                 </div>
               </div>
               <div className="member-info">
@@ -80,7 +80,7 @@ function Teamnutri() {
                   <a href=""><i className="bi bi-twitter"></i></a>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                  <a href=""><i className="bi bi-linkedin"></i></a>
+                  <a href=""><i className="bi bi-calendar"></i></a>
                 </div>
               </div>
               <div className="member-info">
