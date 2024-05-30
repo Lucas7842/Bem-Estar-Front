@@ -93,8 +93,12 @@ function Cep() {
       <div className="form-group">
         <select value={tipo} onChange={handleChangeTipo} className="form-control">
           <option value="gym">Academias</option>
-          <option value="restaurant">Restaurantes</option>
-          <option value="store">Lojas</option>
+          <option value="nutricionita">Nutricionista</option>
+          <option value="praca">Praça</option>
+          <option value="personal">Personal</option>
+          <option value="psicologo">Psicologo</option>
+          <option value="psiquiatra">Psiquiatra</option>
+
           {/* Adicione mais opções conforme necessário */}
         </select>
       </div>
