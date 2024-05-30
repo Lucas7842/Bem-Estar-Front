@@ -22,7 +22,7 @@ function Teamsaudemental() {
               <div className="member-img">
                 <img src={Saude} className="img-fluid" alt="Villa" />
                 <div className="social">
-                  <a href=""><i className="bi bi-twitter"></i></a>
+                  <a href=""><i className="bi bi-journal-check"></i></a>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
                   <a href=""><i className="bi bi-calendar"></i></a>
@@ -40,7 +40,7 @@ function Teamsaudemental() {
               <div className="member-img">
                 <img src={Mental} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href=""><i className="bi bi-twitter"></i></a>
+                  <a href=""><i className="bi bi-journal-check"></i></a>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
                   <a href=""><i className="bi bi-calendar"></i></a>
@@ -58,7 +58,7 @@ function Teamsaudemental() {
               <div className="member-img">
                 <img src={Saudem} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href=""><i className="bi bi-twitter"></i></a>
+                  <a href=""><i className="bi bi-journal-check"></i></a>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
                   <a href=""><i className="bi bi-calendar"></i></a>
@@ -77,7 +77,7 @@ function Teamsaudemental() {
               <div className="member-img">
                 <img src={Saudeme} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href=""><i className="bi bi-twitter"></i></a>
+                  <a href=""><i className="bi bi-journal-check"></i></a>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
                   <a href=""><i className="bi bi-calendar"></i></a>
