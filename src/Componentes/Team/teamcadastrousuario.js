@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import '../../Componentes/Telas/CadastrarUsuario/cadastrousuario.css';
 import { cadastrarUsuario } from '../UsuarioService';
 
-
 function TeamCadastroUsuario() {
   const [usuario, setUsuario] = useState('');
   const [nome, setNome] = useState('');

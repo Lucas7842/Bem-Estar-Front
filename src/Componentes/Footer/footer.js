@@ -1,6 +1,6 @@
 import "../Header/header.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { Link } from 'react-router-dom';
 function Footer() {
   return (
     <footer id="footer">
@@ -20,11 +20,11 @@ function Footer() {
             <div className="col-lg-2 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                <li><i className="bx bx-chevron-right"></i> <a href="index.html">HOME</a></li>
-                <li><i className="bx bx-chevron-right"></i> <a href="academia.html">ACADEMIAS E PRAÇAS</a></li>
-                <li><i className="bx bx-chevron-right"></i> <a href="nutricao.html">NUTRICÃO</a></li>
-                <li><i className="bx bx-chevron-right"></i> <a href="personal.html">PERSONAL</a></li>
-                <li><i className="bx bx-chevron-right"></i> <a href="saudemental.html">SAÚDE MENTAL</a></li>
+                <li><i className="bx bx-chevron-right"></i> <Link to="/" href="index.html">HOME</Link></li>
+                <li><i className="bx bx-chevron-right"></i> <Link to ="/academia" href="academia.html">ACADEMIAS E PRAÇAS</Link></li>
+                <li><i className="bx bx-chevron-right"></i> <Link to ="/nutricao" href="nutricao.html">NUTRICÃO</Link></li>
+                <li><i className="bx bx-chevron-right"></i> <Link to = "/personal" href="personal.html">PERSONAL</Link></li>
+                <li><i className="bx bx-chevron-right"></i> <Link to ="/saudemental" href="saudemental.html">SAÚDE MENTAL</Link></li>
               </ul>
             </div>
 
