@@ -6,11 +6,12 @@ import Nutricao from './Componentes/Telas/Nutricao/nutricao';
 import Academia from "./Componentes/Telas/Academias/academia";
 import Personal from "./Componentes/Telas/Personal/personal";
 import Saudemental from './Componentes/Page/saudemental';
-import Login from './Componentes/Telas/Login/login';
 import AgendarAulaPage from './Componentes/Telas/AgendarAula/AgendarAulaPage';
 import CadastrarUsuarioPage from './Componentes/Telas/CadastrarUsuario/CadastrarUsuarioPage';
-import ConsultarAulaPage from './Componentes/Telas/ConsultarAula/ConsultarAulaPage'; // Importe o novo componente
-//import Profissional from './Componentes/ConsultaUsuario/index'
+import ConsultarAulaPage from './Componentes/Telas/ConsultarAula/ConsultarAulaPage'; 
+import LoginPage from './Componentes/Telas/Login/LoginPage';
+import CadastrarProfissionalPage from './Componentes/Telas/CadastrarProfissional/CadastrarProfissionalPage';
+
 
 
 function App() {
@@ -22,10 +23,11 @@ function App() {
         <Route path='/academia' element={<Academia />} />
         <Route path='/personal' element={<Personal />} />
         <Route path='/saudemental' element={<Saudemental />} />
-        <Route path='/login' element={<Login />} />
+        <Route path='/login' element={<LoginPage />} />
         <Route path='/agendaraula' element={<AgendarAulaPage />} />
         <Route path='/cadastrar-usuario' element={<CadastrarUsuarioPage />} />
         <Route path='/consultaraula' element={<ConsultarAulaPage />} /> {/* Rota para a página de consulta de aulas */}
+        <Route path='/cadastrar-profissional' element={<CadastrarProfissionalPage />} />
         {/*<Route path='/profissional' element={<Profissional />} /> */}
       </Routes>
     </BrowserRouter>

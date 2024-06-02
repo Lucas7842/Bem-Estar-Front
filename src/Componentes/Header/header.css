@@ -122,7 +122,7 @@ h6 {
 #header {
   transition: all 0.5s;
   z-index: 997;
-  padding: 15px 0;
+  padding: 1px 0;
 }
 
 #header.header-scrolled,
@@ -400,6 +400,25 @@ h6 {
   display: block;
 }
 
+@media (max-width: 991px) {
+  .navbar-mobile ul {
+    display: none; /* Escondendo o menu principal */
+  }
+
+  .navbar-mobile .dropdown-menu {
+    display: block; /* Exibindo o submenu */
+    position: static; /* Removendo o posicionamento absoluto */
+    background-color: transparent; /* Definindo o fundo como transparente */
+    box-shadow: none; /* Removendo a sombra */
+    padding: 0; /* Removendo o preenchimento */
+    margin-top: 10px; /* Adicionando um espaço entre o botão e o submenu */
+  }
+
+  .navbar-mobile .dropdown-menu li {
+    margin: 0; /* Removendo as margens */
+    border-top: 1px solid #ccc; /* Adicionando uma borda entre os itens */
+  }
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -958,3 +977,4 @@ section {
   font-size: 13px;
   color: #fff;
 }
+

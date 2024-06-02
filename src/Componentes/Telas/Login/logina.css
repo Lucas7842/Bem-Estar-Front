@@ -1,7 +1,5 @@
-/* src/Componentes/Telas/Login/login.css */
-
 .login-container {
-  max-width: 400px; /* Adjusted to fit the login card */
+  max-width: 400px; /* Ajusted to fit the login card */
   margin: 50px auto;
   padding: 20px;
   border: 1px solid #ccc;
@@ -60,4 +58,8 @@
 
 .login-container a:hover {
   color: #444; /* Slightly darker shade for hover */
+}
+
+.form-control.password {
+  margin-bottom: 20px; /* Increased bottom margin for spacing */
 }

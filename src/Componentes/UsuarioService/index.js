@@ -2,16 +2,16 @@ import axios from "axios";
 
 const baseURLProfissional = "http://localhost:8080/api/v1/usuarioprofissional";
 const baseURLAgendamento = "http://localhost:8080/api/v1/agendamento";
-const baseURLUsuario = "http://localhost:8080/api/v1/usuario"; // Adicione esta linha
+const baseURLUsuario = "http://localhost:8080/api/v1/usuario";
+const loginURLUsuario = "http://localhost:8080/api/v1/usuario/login";
+const loginURLProfissional = "http://localhost:8080/api/v1/usuarioprofissional/login";
 
 // Função para realizar operações CRUD em um profissional
 export const cadastrarProfissional = (dadosProfissional, metodo = 'post') => {
-  // Verifica se o método especificado é válido
   if (!['post', 'get', 'put', 'delete', 'patch'].includes(metodo)) {
     throw new Error('Método HTTP inválido');
   }
 
-  // Executa a requisição com o método especificado
   switch (metodo) {
     case 'post':
       return axios.post(baseURLProfissional, dadosProfissional);
@@ -30,12 +30,10 @@ export const cadastrarProfissional = (dadosProfissional, metodo = 'post') => {
 
 // Função para realizar operações CRUD em um agendamento
 export const cadastrarAgendamento = (dadosAgendamento, metodo = 'post') => {
-  // Verifica se o método especificado é válido
   if (!['post', 'get', 'put', 'delete', 'patch'].includes(metodo)) {
     throw new Error('Método HTTP inválido');
   }
 
-  // Executa a requisição com o método especificado
   switch (metodo) {
     case 'post':
       return axios.post(baseURLAgendamento, dadosAgendamento);
@@ -54,12 +52,10 @@ export const cadastrarAgendamento = (dadosAgendamento, metodo = 'post') => {
 
 // Função para realizar operações CRUD em um usuário
 export const cadastrarUsuario = (dadosUsuario, metodo = 'post') => {
-  // Verifica se o método especificado é válido
   if (!['post', 'get', 'put', 'delete', 'patch'].includes(metodo)) {
     throw new Error('Método HTTP inválido');
   }
 
-  // Executa a requisição com o método especificado
   switch (metodo) {
     case 'post':
       return axios.post(baseURLUsuario, dadosUsuario);
@@ -74,4 +70,24 @@ export const cadastrarUsuario = (dadosUsuario, metodo = 'post') => {
     default:
       throw new Error('Método HTTP inválido');
   }
+};
+
+// Função para fazer login de usuário comum
+export const loginUsuario = (credenciais) => {
+  return axios.post(loginURLUsuario, credenciais);
+};
+
+// Função para fazer login de usuário profissional
+export const loginUsuarioProfissional = (credenciais) => {
+  return axios.post(loginURLProfissional, credenciais);
+};
+
+// Função para realizar consulta de agendamentos
+export const consultarAgendamentos = () => {
+  return axios.get(baseURLAgendamento);
+};
+
+// Função para excluir um agendamento
+export const excluirAgendamento = (id) => {
+  return axios.delete(`${baseURLAgendamento}/${id}`);
 };

@@ -4,9 +4,9 @@ import 'react-datepicker/dist/react-datepicker.css';
 import moment from 'moment';
 import 'moment/locale/pt-br';
 import pt from 'date-fns/locale/pt-BR';
-import './agendar.css';
-import { cadastrarAgendamento } from '../../UsuarioService';
-import { useNavigate } from 'react-router-dom'; // Importando o hook useNavigate
+import '../../Componentes/Telas/AgendarAula/agendar.css';
+import { cadastrarAgendamento } from '../UsuarioService';
+import { useNavigate } from 'react-router-dom';
 
 registerLocale('pt-BR', pt);
 moment.locale('pt-br');
@@ -15,7 +15,8 @@ function AgendarAulaPage() {
   const [selectedDate, setSelectedDate] = useState(null);
   const [selectedTime, setSelectedTime] = useState(null);
   const [selectedLocation, setSelectedLocation] = useState('');
-  const [successMessage, setSuccessMessage] = useState(null); // Define successMessage state
+  const [successMessage, setSuccessMessage] = useState('');
+  const navigate = useNavigate();
 
   const handleDateChange = (date) => {
     setSelectedDate(date);
@@ -40,7 +41,15 @@ function AgendarAulaPage() {
 
       await cadastrarAgendamento(dadosAgendamento);
 
-      setSuccessMessage('Agendamento cadastrado com sucesso!'); // Set success message
+      const successMsg = 'Agendamento cadastrado com sucesso!';
+      console.log(successMsg);
+      setSuccessMessage(successMsg);
+
+      // Redirecionar para a página do cabeçalho após 2 segundos
+      setTimeout(() => {
+        navigate('/consultaraula');
+      }, 2000);
+
     } catch (error) {
       console.error('Erro ao cadastrar agendamento:', error.message);
     }
@@ -90,8 +99,12 @@ function AgendarAulaPage() {
         <button type="submit" className="btn btn-primary" style={{ backgroundColor: '#ffc451', border: 'none' }}>Agendar</button>
       </form>
       {successMessage && <div className="success-message">{successMessage}</div>}
+      <div>
+        <p className="mt-3 mb-0">Quer consultar aulas agendadas?</p>
+        <p className="mb-0"><strong><a href="/consultaraula" style={{ color: 'black' }}>Consultar Aulas</a></strong></p>
+      </div>
     </div>
   );
-};
+}
 
 export default AgendarAulaPage;

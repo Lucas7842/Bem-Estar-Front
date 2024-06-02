@@ -1,17 +1,21 @@
-/* consultar.css */
+.lista-agendamentos {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centraliza os cards horizontalmente */
+}
 
-.consulta-aulas-container {
-    margin: 50px auto;
-    text-align: center;
-  }
-  
-  .filtro-container {
-    display: inline-block;
-    margin-left: 20px; /* Adiciona um espaço à esquerda do filtro */
-  }
-  
-  .filtro-container label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
+.agendamento-card {
+  background-color: #ffc451;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: calc(33.33% - 40px); /* Ajuste conforme necessário */
+  max-width: 300px; /* Limite máximo de largura para cada card */
+  margin: 20px; /* Adiciona margem ao redor de cada card */
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 20px; /* Adiciona margem inferior para separar o título dos cards */
+}
