@@ -25,7 +25,7 @@ function Team() {
                   <a href="twitter"><i className="bi bi-journal-check"></i></a>
                   <a href="facebook"><i className="bi bi-facebook"></i></a>
                   <a href="instagram"><i className="bi bi-instagram"></i></a>
-                  <a href="linkedin"><i className="bi bi-calendar"></i></a>
+                  <a href="./Team/teamagenda.js"><i className="bi bi-calendar"></i></a>
                 </div>
               </div>
               <div className="member-info">

@@ -14,7 +14,7 @@ const defaultCenter = {
 
 function Cep() {
   const [cep, setCep] = useState('');
-  const [tipo, setTipo] = useState('gym'); // 'gym' é o termo correto para academias no Google Places
+  const [tipo, setTipo] = useState('gym, nutritionist, park, personal_trainer, psychologist, psychiatrist'); // 'gym' é o termo correto para academias no Google Places
   const [estabelecimentos, setEstabelecimentos] = useState([]);
   const [center, setCenter] = useState(defaultCenter);
   const [loading, setLoading] = useState(false);
@@ -93,11 +93,11 @@ function Cep() {
       <div className="form-group">
         <select value={tipo} onChange={handleChangeTipo} className="form-control">
           <option value="gym">Academias</option>
-          <option value="nutricionita">Nutricionista</option>
-          <option value="praca">Praça</option>
-          <option value="personal">Personal</option>
-          <option value="psicologo">Psicologo</option>
-          <option value="psiquiatra">Psiquiatra</option>
+          <option value="nutritionist">Nutricionista</option>
+          <option value="park">Praça</option>
+          <option value="personal_trainer">Personal</option>
+          <option value="psychologist">Psicologo</option>
+          <option value="psychiatrist">Psiquiatra</option>
 
           {/* Adicione mais opções conforme necessário */}
         </select>
@@ -105,7 +105,7 @@ function Cep() {
       <button onClick={onSearch} className="btn btn-primary">
         {loading ? 'Buscando...' : 'Buscar'}
       </button>
-      <LoadScript googleMapsApiKey="AIzaSyDKsBA4oAr48NUrk-fg_0BO43kquUlaFs0">
+      <LoadScript googleMapsApiKey="AIzaSyDGRlYoOAznrhtVPo5g8CjfMi7PlWz9bCM" libraries={["places"]}>
         <GoogleMap
           mapContainerStyle={containerStyle}
           center={center}

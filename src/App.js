@@ -8,7 +8,7 @@ import Personal from "./Componentes/Telas/Personal/personal";
 import Saudemental from './Componentes/Page/saudemental';
 import AgendarAulaPage from './Componentes/Telas/AgendarAula/AgendarAulaPage';
 import CadastrarUsuarioPage from './Componentes/Telas/CadastrarUsuario/CadastrarUsuarioPage';
-import ConsultarAulaPage from './Componentes/Telas/ConsultarAula/ConsultarAulaPage'; 
+import ConsultarAulaPage from './Componentes/Telas/ConsultarAula/ConsultarAulaPage';
 import LoginPage from './Componentes/Telas/Login/LoginPage';
 import CadastrarProfissionalPage from './Componentes/Telas/CadastrarProfissional/CadastrarProfissionalPage';
 
