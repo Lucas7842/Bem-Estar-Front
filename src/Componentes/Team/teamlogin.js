@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import '../../Componentes/Telas/Login/logina.css';
 import { useNavigate } from 'react-router-dom';
-import { loginUsuario } from '../UsuarioService'; 
-import { loginUsuarioProfissional } from '../UsuarioService';
+import { loginUsuario, loginUsuarioProfissional } from '../UsuarioService';
 
 function TeamLogin() {
   const [email, setEmail] = useState('');
   const [senha, setSenha] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Adicione um estado para controlar se o usuário está logado ou não
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
   const handleEmailChange = (event) => {
     setEmail(event.target.value);
@@ -26,11 +25,16 @@ function TeamLogin() {
         throw new Error('Por favor, preencha todos os campos.');
       }
 
-      const response = await loginUsuario({ email, senha });
+      const responses = await Promise.allSettled([
+        loginUsuario({ email, senha }),
+        loginUsuarioProfissional({ email, senha })
+      ]);
 
-      if (response.status === 200) {
+      const successfulResponse = responses.find(response => response.status === 'fulfilled' && response.value.status === 200);
+
+      if (successfulResponse) {
         console.log('Login realizado com sucesso!');
-        setIsLoggedIn(true); // Define isLoggedIn como true quando o login é bem-sucedido
+        setIsLoggedIn(true);
         navigate('/');
       } else {
         throw new Error('Credenciais inválidas. Por favor, tente novamente.');
@@ -70,7 +74,6 @@ function TeamLogin() {
         <button type="submit" className="btn btn-primary" style={{ backgroundColor: '#ffc451', border: 'none' }}>Login</button>
       </form>
       <div>
-        {/* Renderiza os botões de "Cadastre-se" e "Login" somente se o usuário não estiver logado */}
         {!isLoggedIn && (
           <p className="mt-3 mb-0">Ainda não tem cadastro? <a href="/cadastrar-usuario" className="fw-bold" style={{ color: 'black' }}>Cadastre-se</a></p>
         )}
