@@ -1,7 +1,7 @@
 //ORGANIZA AS IMAGENS E DESCRIÇÃO DA PAGINA SAUDE MENTAL
 
 import React, { useState } from "react";
-
+import { Link } from 'react-router-dom';
 import Persona from "../../Componentes/img/Fotos/persona.png";
 import Perso from "../../Componentes/img/Fotos/personal2.png";
 import Person from "../../Componentes/img/Fotos/personal3.png";
@@ -24,10 +24,10 @@ function Teampersonal() {
               <div className="member-img">
                 <img src={Persona} className="img-fluid" alt="Villa" />
                 <div className="social">
-                  <a href=""><i className="bi bi-journal-check"></i></a>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                  <a href=""><i className="bi bi-calendar"></i></a>
+                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -42,10 +42,10 @@ function Teampersonal() {
               <div className="member-img">
                 <img src={Perso} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href=""><i className="bi bi-journal-check"></i></a>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                  <a href=""><i className="bi bi-calendar"></i></a>
+                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -60,10 +60,10 @@ function Teampersonal() {
               <div className="member-img">
                 <img src={Person} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href=""><i className="bi bi-journal-check"></i></a>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                  <a href=""><i className="bi bi-calendar"></i></a>
+                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -79,10 +79,10 @@ function Teampersonal() {
               <div className="member-img">
                 <img src={Per} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href=""><i className="bi bi-journal-check"></i></a>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                  <a href=""><i className="bi bi-calendar"></i></a>
+                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">

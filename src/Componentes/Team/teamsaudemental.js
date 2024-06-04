@@ -4,6 +4,7 @@ import Saude from "../../Componentes/img/Fotos/Saudemental1.jpg";
 import Mental from "../../Componentes/img/Fotos/Saudemental2.jpg";
 import Saudem from "../../Componentes/img/Fotos/SaudementalClinica2.png";
 import Saudeme from "../../Componentes/img/Fotos/SudementalClinica.png";
+import { Link } from 'react-router-dom';
 
 function Teamsaudemental() {
   return (
@@ -22,10 +23,10 @@ function Teamsaudemental() {
               <div className="member-img">
                 <img src={Saude} className="img-fluid" alt="Villa" />
                 <div className="social">
-                  <a href=""><i className="bi bi-journal-check"></i></a>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                  <a href=""><i className="bi bi-calendar"></i></a>
+                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -40,10 +41,10 @@ function Teamsaudemental() {
               <div className="member-img">
                 <img src={Mental} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href=""><i className="bi bi-journal-check"></i></a>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                  <a href=""><i className="bi bi-calendar"></i></a>
+                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -58,10 +59,10 @@ function Teamsaudemental() {
               <div className="member-img">
                 <img src={Saudem} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href=""><i className="bi bi-journal-check"></i></a>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                  <a href=""><i className="bi bi-calendar"></i></a>
+                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -77,10 +78,10 @@ function Teamsaudemental() {
               <div className="member-img">
                 <img src={Saudeme} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href=""><i className="bi bi-journal-check"></i></a>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                  <a href=""><i className="bi bi-calendar"></i></a>
+                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">

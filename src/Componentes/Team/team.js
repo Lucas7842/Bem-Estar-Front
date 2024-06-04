@@ -4,6 +4,7 @@ import Villa from "../../Componentes/img/Fotos/villa.PNG";
 import Pano from "../../Componentes/img/Fotos/panobianco.PNG";
 import ParquePaco from "../../Componentes/img/Fotos/parquepaco.jpg"
 import PracaMoca from "../../Componentes/img/Fotos/pracadamoca.jpg"
+import { Link } from 'react-router-dom';
 
 function Team() {
   return (
@@ -22,10 +23,10 @@ function Team() {
               <div className="member-img">
                 <img src={Villa} className="img-fluid" alt="Villa" />
                 <div className="social">
-                  <a href="twitter"><i className="bi bi-journal-check"></i></a>
+                <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href="facebook"><i className="bi bi-facebook"></i></a>
                   <a href="instagram"><i className="bi bi-instagram"></i></a>
-                  <a href="./Team/teamagenda.js"><i className="bi bi-calendar"></i></a>
+                  <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -40,10 +41,10 @@ function Team() {
               <div className="member-img">
                 <img src={Pano} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href="twitter"><i className="bi bi-journal-check"></i></a>
+                <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href="facebook"><i className="bi bi-facebook"></i></a>
                   <a href="instagram"><i className="bi bi-instagram"></i></a>
-                  <a href="linkedin"><i className="bi bi-calendar"></i></a>
+                  <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -58,10 +59,10 @@ function Team() {
               <div className="member-img">
                 <img src={ParquePaco} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href="twitter"><i className="bi bi-journal-check"></i></a>
+                <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href="facebook"><i className="bi bi-facebook"></i></a>
                   <a href="instagram"><i className="bi bi-instagram"></i></a>
-                  <a href="linkedin"><i className="bi bi-calendar"></i></a>
+                  <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -76,10 +77,10 @@ function Team() {
               <div className="member-img">
                 <img src={PracaMoca} className="img-fluid" alt="" />
                 <div className="social">
-                  <a href="twitter"><i className="bi bi-journal-check"></i></a>
+                <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href="facebook"><i className="bi bi-facebook"></i></a>
                   <a href="instagram"><i className="bi bi-instagram"></i></a>
-                  <a href="linkedin"><i className="bi bi-calendar"></i></a>
+                  <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
