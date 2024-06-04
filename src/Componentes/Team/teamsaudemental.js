@@ -1,9 +1,9 @@
 //ORGANIZA AS IMAGENS E DESCRIÇÃO DA PAGINA SAUDE MENTAL
 import React from "react";
-import Saude from "../../Componentes/img/Fotos/Saudemental1.jpg";
-import Mental from "../../Componentes/img/Fotos/Saudemental2.jpg";
+import Saude from "../../Componentes/img/Fotos/psiquiatra2.jpg";
+import Mental from "../../Componentes/img/Fotos/psiquiatra3.jpg";
 import Saudem from "../../Componentes/img/Fotos/SaudementalClinica2.png";
-import Saudeme from "../../Componentes/img/Fotos/SudementalClinica.png";
+import Saudeme from "../../Componentes/img/Fotos/psiquiatra4.jpg";
 import { Link } from 'react-router-dom';
 
 function Teamsaudemental() {
@@ -26,7 +26,7 @@ function Teamsaudemental() {
                   <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
+                  <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -44,11 +44,11 @@ function Teamsaudemental() {
                   <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
+                  <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
-                <h4>Terapeuta Emília Andressa</h4>
+                <h4>Psicologa Emília de Paula</h4>
                 <span>Av. Presidente Kenedy,nº 69 Diadema-SP</span>
               </div>
             </div>
@@ -62,7 +62,7 @@ function Teamsaudemental() {
                   <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
+                  <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -81,11 +81,11 @@ function Teamsaudemental() {
                   <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
-                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
+                  <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
                 </div>
               </div>
               <div className="member-info">
-                <h4>Clinica ViVA+</h4>
+                <h4>Dr Vitor Campelo - Psiquiatra</h4>
                 <span>Av. Sete de Setembro,nº982 Diadema-SP</span>
               </div>
             </div>

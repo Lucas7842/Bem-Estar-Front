@@ -17,16 +17,10 @@ function Section() {
         <div className="row gy-4 mt-5 justify-content-center" data-aos="zoom-in" data-aos-delay="250">
           <div className="col-xl-2 col-md-4">
             <div className="icon-box">
-              <i className="bx bxl-dribbble"></i>
+              <i className="bi bi-heart-pulse"></i>
               <h3><Link to="/academia">ACADEMIAS E PRAÇAS</Link></h3>
             </div>
           </div>
-          {/* <div className="col-xl-2 col-md-4">
-              <div className="icon-box">
-                <i className="ri-bar-chart-box-line"></i>
-                <h3><a href="dicas.html">DICAS E BEM-ESTAR</a></h3>
-              </div>
-            </div> */}
           <div className="col-xl-2 col-md-4">
             <div className="icon-box">
               <i className="bx bx-tachometer"></i>
@@ -35,13 +29,13 @@ function Section() {
           </div>
           <div className="col-xl-2 col-md-4">
             <div className="icon-box">
-              <i className="bx bx-world"></i>
+              <i className="bx bxl-dribbble"></i>
               <h3><Link to="/personal">PERSONAL</Link></h3>
             </div>
           </div>
           <div className="col-xl-2 col-md-4">
             <div className="icon-box">
-              <i className="bx bx-slideshow"></i>
+              <i className="bi bi-wechat"></i>
               <h3><Link to="saudemental">SAÚDE MENTAL</Link></h3>
             </div>
           </div>
