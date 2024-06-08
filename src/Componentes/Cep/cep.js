@@ -86,7 +86,7 @@ function Cep() {
           type="text"
           value={cep}
           onChange={handleChangeCep}
-          placeholder="Insira o CEP"
+          placeholder="Insira o CEP: 00000-000"
           className="form-control"
         />
       </div>
