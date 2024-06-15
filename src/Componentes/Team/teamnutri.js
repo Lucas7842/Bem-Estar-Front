@@ -23,10 +23,11 @@ function Teamnutri() {
               <div className="member-img">
                 <img src={Nutri} className="img-fluid" alt="Villa" />
                 <div className="social">
-                <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
+              
                   <a href="#"><i className="bi bi-facebook"></i></a>
                   <a href="#"><i className="bi bi-instagram"></i></a>
                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -41,10 +42,11 @@ function Teamnutri() {
               <div className="member-img">
                 <img src={Nutric} className="img-fluid" alt="" />
                 <div className="social">
-                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
+              
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
                    <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
+                   <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -59,10 +61,11 @@ function Teamnutri() {
               <div className="member-img">
                 <img src={Nutrica} className="img-fluid" alt="" />
                 <div className="social">
-                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
+                 
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
                    <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
+                   <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -78,10 +81,11 @@ function Teamnutri() {
               <div className="member-img">
                 <img src={Nutricaoo} className="img-fluid" alt="" />
                 <div className="social">
-                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
+              
                   <a href=""><i className="bi bi-facebook"></i></a>
                   <a href=""><i className="bi bi-instagram"></i></a>
                    <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
+                   <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                 </div>
               </div>
               <div className="member-info">

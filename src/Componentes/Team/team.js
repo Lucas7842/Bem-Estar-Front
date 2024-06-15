@@ -23,10 +23,10 @@ function Team() {
               <div className="member-img">
                 <img src={Villa} className="img-fluid" alt="Villa" />
                 <div className="social">
-                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href="facebook"><i className="bi bi-facebook"></i></a>
                   <a href="instagram"><i className="bi bi-instagram"></i></a>
                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -41,10 +41,10 @@ function Team() {
               <div className="member-img">
                 <img src={Pano} className="img-fluid" alt="" />
                 <div className="social">
-                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                   <a href="facebook"><i className="bi bi-facebook"></i></a>
                   <a href="instagram"><i className="bi bi-instagram"></i></a>
                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -59,10 +59,11 @@ function Team() {
               <div className="member-img">
                 <img src={ParquePaco} className="img-fluid" alt="" />
                 <div className="social">
-                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
+    
                   <a href="facebook"><i className="bi bi-facebook"></i></a>
                   <a href="instagram"><i className="bi bi-instagram"></i></a>
                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                 </div>
               </div>
               <div className="member-info">
@@ -77,10 +78,11 @@ function Team() {
               <div className="member-img">
                 <img src={PracaMoca} className="img-fluid" alt="" />
                 <div className="social">
-                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
+                 
                   <a href="facebook"><i className="bi bi-facebook"></i></a>
                   <a href="instagram"><i className="bi bi-instagram"></i></a>
                   <Link to="/agendaraula"><i className="bi bi-calendar"></i></Link>
+                  <Link to="/consultaraula"><i className="bi bi-journal-check"></i></Link>
                 </div>
               </div>
               <div className="member-info">
