@@ -66,7 +66,7 @@ function Team() {
                 </div>
               </div>
               <div className="member-info">
-                <h4>Parque do Paço</h4>
+                <h4>Smart Fit</h4>
                 <span>Rua Alm. Barroso 111, Diadema-SP </span>
               </div>
             </div>
@@ -84,7 +84,7 @@ function Team() {
                 </div>
               </div>
               <div className="member-info">
-                <h4>Praça da Moça</h4>
+                <h4>Bluefit</h4>
                 <span>Av. Alda - Centro, Diadema - SP</span>
               </div>
             </div>
