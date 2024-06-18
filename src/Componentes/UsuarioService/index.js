@@ -91,3 +91,8 @@ export const consultarAgendamentos = () => {
 export const excluirAgendamento = (id) => {
   return axios.delete(`${baseURLAgendamento}/${id}`);
 };
+
+// Função para atualizar um agendamento
+export const atualizarAgendamento = (id, dadosAgendamento) => {
+  return axios.patch(`${baseURLAgendamento}/${id}`, dadosAgendamento);
+};

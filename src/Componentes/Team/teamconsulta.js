@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import '../../Componentes/Telas/ConsultarAula/consultar.css';
-import { consultarAgendamentos, excluirAgendamento } from '../UsuarioService';
+import { consultarAgendamentos, excluirAgendamento, atualizarAgendamento } from '../UsuarioService';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash, faEdit, faSave } from '@fortawesome/free-solid-svg-icons';
 
@@ -26,7 +26,7 @@ function TeamConsulta() {
   const handleDelete = async (index) => {
     try {
       const agendamento = agendamentos[index];
-      await excluirAgendamento(agendamento.id); // Adiciona a chamada para excluir do banco de dados
+      await excluirAgendamento(agendamento.id);
       const updatedAgendamentos = [...agendamentos];
       updatedAgendamentos.splice(index, 1);
       setAgendamentos(updatedAgendamentos);
@@ -41,7 +41,7 @@ function TeamConsulta() {
     setValidationError('');
   };
 
-  const handleSave = () => {
+  const handleSave = async () => {
     const dateRegex = /^(0[1-9]|[12][0-9]|3[01])\/(0[1-9]|1[0-2])\/\d{4}$/;
     const timeRegex = /^([01]\d|2[0-3]):([0-5]\d)$/;
 
@@ -60,10 +60,17 @@ function TeamConsulta() {
       return;
     }
 
-    const updatedAgendamentos = [...agendamentos];
-    updatedAgendamentos[editingIndex] = editedAgendamento;
-    setAgendamentos(updatedAgendamentos);
-    setEditingIndex(null);
+    try {
+      console.log('Salvando agendamento:', editedAgendamento);
+      await atualizarAgendamento(editedAgendamento.id, editedAgendamento);
+      const updatedAgendamentos = [...agendamentos];
+      updatedAgendamentos[editingIndex] = editedAgendamento;
+      setAgendamentos(updatedAgendamentos);
+      setEditingIndex(null);
+      setEditedAgendamento({});
+    } catch (error) {
+      console.error('Erro ao atualizar agendamento:', error);
+    }
   };
 
   const handleInputChange = (e) => {

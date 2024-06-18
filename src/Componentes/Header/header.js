@@ -1,7 +1,36 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 function Header() {
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    // Verifique se o usuário está autenticado ao carregar o componente
+    const loggedIn = localStorage.getItem('isAuthenticated');
+    if (loggedIn === 'true') {
+      setIsAuthenticated(true);
+    }
+
+    // Adicione um event listener para mudanças na autenticação
+    const handleStorageChange = () => {
+      const loggedIn = localStorage.getItem('isAuthenticated');
+      setIsAuthenticated(loggedIn === 'true');
+    };
+
+    window.addEventListener('storage', handleStorageChange);
+    
+    // Limpe o event listener ao desmontar o componente
+    return () => {
+      window.removeEventListener('storage', handleStorageChange);
+    };
+  }, []);
+
+  const handleLogout = () => {
+    // Simule o processo de logout
+    setIsAuthenticated(false);
+    localStorage.removeItem('isAuthenticated');
+  };
+
   return (
     <section id="header" className="top">
       <div className="container d-flex align-items-center justify-content-lg-between">
@@ -20,8 +49,14 @@ function Header() {
           <i className="bi bi-list mobile-nav-toggle"></i>
         </nav>
         <div>
-          <Link to="/cadastrar-usuario" className="get-started-btn scrollto me-2">Cadastre-se</Link>
-          <a href="/login" className="get-started-btn scrollto">Login</a>
+          {!isAuthenticated ? (
+            <>
+              <Link to="/cadastrar-usuario" className="get-started-btn scrollto me-2">Cadastre-se</Link>
+              <Link to="/login" className="get-started-btn scrollto">Login</Link>
+            </>
+          ) : (
+            <button className="get-started-btn scrollto " onClick={handleLogout}>Sair</button>
+          )}
         </div>
       </div>
     </section>

@@ -35,6 +35,8 @@ function TeamLogin() {
       if (successfulResponse) {
         console.log('Login realizado com sucesso!');
         setIsLoggedIn(true);
+        localStorage.setItem('isAuthenticated', 'true');
+        window.dispatchEvent(new Event('storage')); // Emite um evento de armazenamento
         navigate('/');
       } else {
         throw new Error('Credenciais inválidas. Por favor, tente novamente.');
@@ -46,6 +48,8 @@ function TeamLogin() {
 
   const handleLogout = () => {
     setIsLoggedIn(false);
+    localStorage.removeItem('isAuthenticated');
+    window.dispatchEvent(new Event('storage')); // Emite um evento de armazenamento
     navigate('/'); // Navega para a página inicial ou outra página após o logout
   };
 
@@ -86,8 +90,8 @@ function TeamLogin() {
         </>
       ) : (
         <>
-          <h2>Bem-vindo ao Portal Diadema ENforma</h2>
-          <button onClick={handleLogout} className="btn btn-primary" style={{ backgroundColor: '#ffc451', border: 'none' }}>Logout</button>
+       
+          <button onClick={handleLogout} className="btn btn-primary" style={{ backgroundColor: '#ffc451', border: 'none' }}>Sair</button>
         </>
       )}
     </div>
