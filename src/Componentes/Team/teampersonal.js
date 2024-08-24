@@ -14,7 +14,7 @@ function Teampersonal() {
 
         <div className="section-title">
           <h2>MELHORE</h2>
-          <p>SUA SAÚDE MENTAL</p>
+          <p>SUA SAÚDE FÍSICA</p>
         </div>
 
         <div className="row">
