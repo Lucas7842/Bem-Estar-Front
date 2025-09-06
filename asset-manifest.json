@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/Bem-Estar-Front/static/css/main.dbfabc28.css",
+    "main.js": "/Bem-Estar-Front/static/js/main.5007ed0c.js",
+    "static/js/453.1acf7f27.chunk.js": "/Bem-Estar-Front/static/js/453.1acf7f27.chunk.js",
+    "static/media/corda.PNG": "/Bem-Estar-Front/static/media/corda.d6088bb6e028b6df18ae.PNG",
+    "static/media/panobianco.PNG": "/Bem-Estar-Front/static/media/panobianco.4e3cfb612940c7fa71cb.PNG",
+    "static/media/villa.PNG": "/Bem-Estar-Front/static/media/villa.309e7c7b5a1d19cf9e10.PNG",
+    "static/media/hero-bg.jpeg": "/Bem-Estar-Front/static/media/hero-bg.7c6cf70ae31941db0430.jpeg",
+    "static/media/corrida.jpg": "/Bem-Estar-Front/static/media/corrida.db8b0d5d985b7ebb4a6e.jpg",
+    "static/media/nutricionista4.png": "/Bem-Estar-Front/static/media/nutricionista4.e79ab1f506cab4dc0b51.png",
+    "static/media/personal2.png": "/Bem-Estar-Front/static/media/personal2.4b8cd18e2aec4e718e26.png",
+    "static/media/personal3.png": "/Bem-Estar-Front/static/media/personal3.2283503f891144ed7055.png",
+    "static/media/persona.png": "/Bem-Estar-Front/static/media/persona.6e4f41d9ea243a3280c7.png",
+    "static/media/nutrionista1.png": "/Bem-Estar-Front/static/media/nutrionista1.ef28cb766e5b1f313ef9.png",
+    "static/media/SaudementalClinica2.png": "/Bem-Estar-Front/static/media/SaudementalClinica2.dded751cc264ff3d22f2.png",
+    "static/media/nutricionista2.png": "/Bem-Estar-Front/static/media/nutricionista2.074c4dbfbffa0bfc6279.png",
+    "static/media/nutricionista3.png": "/Bem-Estar-Front/static/media/nutricionista3.45bf943b13606b25a0a7.png",
+    "static/media/personal4.png": "/Bem-Estar-Front/static/media/personal4.6324fd2a7461fe46b4a0.png",
+    "static/media/psiquiatra2.jpg": "/Bem-Estar-Front/static/media/psiquiatra2.58780a7f98e6122702ee.jpg",
+    "static/media/academia4.jpg": "/Bem-Estar-Front/static/media/academia4.5ddd91efa53bab920a47.jpg",
+    "static/media/psiquiatra3.jpg": "/Bem-Estar-Front/static/media/psiquiatra3.a89e6571b11eeaa4246b.jpg",
+    "static/media/psiquiatra4.jpg": "/Bem-Estar-Front/static/media/psiquiatra4.c39fa14188a70bae9dda.jpg",
+    "static/media/academia3.jpg": "/Bem-Estar-Front/static/media/academia3.cb1f54918a36a9cd05ca.jpg",
+    "index.html": "/Bem-Estar-Front/index.html",
+    "main.dbfabc28.css.map": "/Bem-Estar-Front/static/css/main.dbfabc28.css.map",
+    "main.5007ed0c.js.map": "/Bem-Estar-Front/static/js/main.5007ed0c.js.map",
+    "453.1acf7f27.chunk.js.map": "/Bem-Estar-Front/static/js/453.1acf7f27.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dbfabc28.css",
+    "static/js/main.5007ed0c.js"
+  ]
+}
